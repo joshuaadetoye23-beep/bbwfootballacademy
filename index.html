@@ -697,9 +697,7 @@ button {
 .vision-item:nth-child(5),
 .vision-item:nth-child(6) {
     border-top: 1px solid #d5dbe4;
-}
-
-.vision-item span {
+}.vision-item span {
     display: block;
 
     color: var(--navy);
@@ -1326,77 +1324,1540 @@ button {
             ),
             url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1400&q=85")
             center/cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 52px;
+}
+
+.hero-tagline {
+    font-size: 16px;
+}
+
+.hero-description {
+    font-size: 14px;
+}
+
+.feature-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.feature:nth-child(2) {
+    border-right: none;
+}
+
+.feature:nth-child(3),
+.feature:nth-child(4) {
+    border-top: 1px solid rgba(255,255,255,.15);
+}.about-grid {
+    grid-template-columns: 1fr;
+}
+
+.about-image {
+    min-height: 350px;
+}
+
+.about-content {
+    padding: 50px 5%;
+}
+
+.about-icons {
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-icon:nth-child(2) {
+    border-right: none;
+}
+
+.about-icon:nth-child(3),
+.about-icon:nth-child(4) {
+    border-top: 1px solid rgba(255,255,255,.16);
+}
+
+.vision-grid-box {
+    grid-template-columns: 1fr 1fr;
+}
+
+.vision-item:nth-child(3) {
+    border-right: none;
+}
+
+.vision-item:nth-child(4),
+.vision-item:nth-child(5),
+.vision-item:nth-child(6) {
+    border-top: 1px solid #d5dbe4;
+}
+
+.vision-item:nth-child(4) {
+    border-right: 1px solid #d5dbe4;
+}
+
+.players-header {
+    flex-direction: column;    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+.player-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-grid {
+    grid-template-columns: 1fr;
+}
+
+.cta-grid {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-main {
+    grid-template-columns: 1fr 1fr;
+}.footer-about {
+    grid-column: 1 / -1;
+}
+
+.footer-bottom {
+    flex-direction: column;
+
+    text-align: center;
+}
+
+}
+
+@media(max-width:500px) {
+
+    .container {
+        width: 90%;
     }
 
     .hero h1 {
-        font-size: 52px;
+        font-size: 48px;
+
+        letter-spacing: -2px;
     }
 
     .hero-tagline {
-        font-size: 16px;
+        line-height: 1.7;
     }
 
-    .hero-description {
-        font-size: 14px;
+    .buttons {
+        width: 100%;
+    }
+
+    .buttons .btn {
+        width: 100%;
     }
 
     .feature-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .feature:nth-child(2) {
-        border-right: none;
-    }
-
-    .feature:nth-child(3),
-    .feature:nth-child(4) {
-        border-top: 1px solid rgba(255,255,255,.15);
-    }
-
-    .about-grid {
         grid-template-columns: 1fr;
     }
 
-    .about-image {
-        min-height: 350px;
+    .feature {
+        border-right: none !important;
+
+        border-bottom: 1px solid rgba(255,255,255,.12);
     }
 
-    .about-content {
-        padding: 50px 5%;
+    .feature:last-child {
+        border-bottom: none;
     }
 
-    .about-icons {
+    .player-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+    }
+
+    .player-image {
+        height: 220px;
+    }
+
+    .player-info h3 {
+        font-size: 10px;
+    }
+
+    .gallery-images {
         grid-template-columns: 1fr 1fr;
     }
 
-    .about-icon:nth-child(2) {
-        border-right: none;
+    .gallery-images img {
+        height: 135px;
     }
 
-    .about-icon:nth-child(3),
-    .about-icon:nth-child(4) {
-        border-top: 1px solid rgba(255,255,255,.16);
+    .gallery-images img:last-child {
+        display: none;
     }
 
-    .vision-grid-box {
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-about {
+        grid-column: auto;
+    }
+
+}.footer-about {
+    grid-column: 1 / -1;
+}
+
+.footer-bottom {
+    flex-direction: column;
+
+    text-align: center;
+}
+
+}
+
+@media(max-width:500px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+    .hero-tagline {
+        line-height: 1.7;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .buttons .btn {
+        width: 100%;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        border-right: none !important;
+
+        border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .feature:last-child {
+        border-bottom: none;
+    }
+
+    .player-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+    }
+
+    .player-image {
+        height: 220px;
+    }
+
+    .player-info h3 {
+        font-size: 10px;    }
+
+    .gallery-images {
         grid-template-columns: 1fr 1fr;
     }
 
-    .vision-item:nth-child(3) {
-        border-right: none;
+    .gallery-images img {
+        height: 135px;
     }
 
-    .vision-item:nth-child(4),
-    .vision-item:nth-child(5),
-    .vision-item:nth-child(6) {
-        border-top: 1px solid #d5dbe4;
+    .gallery-images img:last-child {
+        display: none;
     }
 
-    .vision-item:nth-child(4) {
-        border-right: 1px solid #d5dbe4;
+    .footer-main {
+        grid-template-columns: 1fr;
     }
 
-    .players-header {
-        flex-direction: column;
+    .footer-about {
+        grid-column: auto;
+    }
 
-        align-items: flex-sta
+}/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.hero-content {
+    animation: fadeUp .9s ease both;
+}
+
+</style>
+</head><body>
+
+<!-- =======================================================
+     HEADER
+======================================================= -->
+
+<header class="header">
+
+<div class="container nav">
+
+
+<a href="#home" class="logo">
+
+<img
+src="https://raw.githubusercontent.com/joshuadetoye23-beep/bbwfootballacademy/main/Logo.png"
+alt="BBW Football Academy Logo"
+onerror="this.onerror=null;this.src='./Logo.png';"
+>
+
+<div class="logo-text">
+
+<strong>BBW</strong>
+
+<span>FOOTBALL ACADEMY</span>
+
+</div>
+
+</a>
+
+
+<nav class="nav-links" id="navLinks">
+
+<a href="#home" class="active">
+Home
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#players">
+Players
+</a>
+
+<a href="#vision">
+Our Vision
+</a>
+
+<a href="#gallery">
+Gallery
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+</nav>
+
+
+<a
+href="#scout"
+class="header-btn"
+>
+Get Scouted →
+</a>
+
+
+<button
+class="menu-btn"
+id="menuBtn"
+aria-label="Menu"
+>
+☰
+</button>
+
+
+</div>
+
+</header>
+
+
+<!-- =======================================================
+     HERO
+======================================================= -->
+
+<section
+class="hero"
+id="home"
+>
+
+<div class="container">
+
+<div class="hero-content">
+
+
+<div class="eyebrow">
+Welcome To
+</div>
+
+
+<h1>
+
+<span class="white">
+BBW
+</span>
+
+<span class="gold">
+Football Academy
+</span>
+
+</h1>
+
+
+<div class="hero-tagline">
+
+Developing Talent
+<span>·</span>
+Creating Stars.
+
+</div>
+
+
+<p class="hero-description">
+
+BBW Football Academy is a talent discovery and player
+development platform, connecting talented footballers
+with scouts, clubs and professional opportunities.
+
+</p>
+
+
+<div class="buttons">
+
+<a
+href="#scout"
+class="btn btn-gold"
+>
+Get Scouted →
+</a>
+
+
+<a
+href="#players"
+class="btn btn-outline"
+>
+Explore Our Players →
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     FEATURE STRIP
+======================================================= -->
+
+<section class="feature-strip">
+
+<div class="container feature-grid">
+
+<div class="feature">
+
+<div class="feature-icon">
+⌕
+</div>
+
+<div>
+
+<h3>
+Talent Discovery
+</h3>
+
+<p>
+Spotting raw talent early
+and giving it a platform.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+▮▮▮
+</div>
+
+<div>
+
+<h3>
+Player Development
+</h3>
+
+<p>
+Building skills, confidence
+and game intelligence.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+◉
+</div>
+
+<div>
+
+<h3>
+Professional Exposure
+</h3>
+
+<p>
+Connecting players with scouts,
+clubs and opportunities.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">
+★
+</div>
+
+<div>
+
+<h3>
+A Brighter Future
+</h3>
+
+<p>
+More visibility. More
+opportunities. More success.
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section><!-- =======================================================
+     ABOUT
+======================================================= -->
+
+<section
+class="about"
+id="about"
+>
+
+<div class="about-grid">
+
+
+<div class="about-image">
+
+<img
+src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1200&q=90"
+alt="BBW football players"
+>
+
+<div class="about-label">
+
+Talent<br>
+
+Find<br>
+
+<span>Opportunity</span>
+
+</div>
+
+</div>
+
+
+<div class="about-content">
+
+
+<div class="section-kicker">
+About BBW
+</div>
+
+
+<h2 class="section-title">
+
+More Than Just
+
+<span class="gold">
+Football
+</span>
+
+</h2>
+
+
+<p>
+
+BBW Football Academy is a home for ambitious and
+talented players. We focus on discovering, developing
+and showcasing young footballers who have the potential
+to make an impact at the highest level.
+
+</p>
+
+
+<div class="about-icons">
+
+
+<div class="about-icon">
+
+<span>
+◉
+</span>
+
+<strong>
+Talent<br>
+Identification
+</strong>
+
+</div>
+
+
+<div class="about-icon">
+
+<span>
+▮▮
+</span>
+
+<strong>
+Player<br>
+Development
+</strong>
+
+</div>
+
+
+<div class="about-icon">
+
+<span>
+◉
+</span>
+
+<strong>
+Exposure &<br>
+Scouting
+</strong>
+
+</div>
+
+
+<div class="about-icon">
+
+<span>
+♟
+</span>
+
+<strong>
+Professional<br>
+Network
+</strong>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- =======================================================
+     VISION
+======================================================= -->
+
+<section
+class="vision"
+id="vision"
+>
+
+<div class="container vision-grid">
+
+
+<div>
+
+<div class="section-kicker">
+Why Choose BBW
+</div>
+
+
+<h2 class="vision-title">
+
+The Right Platform
+for Your <span style="color:#e5b800;">
+Talent
+</span>
+
+</h2>
+
+
+<p class="vision-description">
+
+At BBW, we provide the right environment, network
+and exposure to help talented players reach their
+full potential.
+
+</p>
+
+
+<a
+href="#scout"
+class="btn btn-gold"
+>
+Get Scouted Now →
+</a>
+
+</div>
+
+
+<div class="vision-grid-box">
+
+
+<div class="vision-item">
+
+<span>
+⚽
+</span>
+
+<h3>
+Focused Development
+</h3>
+
+<p>
+Structured pathways
+for growth.
+</p>
+
+</div>
+
+
+<div class="vision-item">
+
+<span>
+◉
+</span>
+
+<h3>
+Scout Visibility
+</h3>
+
+<p>
+Putting players
+in front of opportunities.
+</p>
+
+</div>Get noticed by clubs
+and scouts.
+</p>
+
+</div>
+
+
+<div class="vision-item">
+
+<span>
+♢
+</span>
+
+<h3>
+Professional Exposure
+</h3>
+
+<p>
+Showcase your talent
+on bigger stages.
+</p>
+
+</div>
+
+
+<div class="vision-item">
+
+<span>
+🏅
+</span>
+
+<h3>
+Discipline & Character
+</h3>
+
+<p>
+Build stronger
+mindsets.
+</p>
+
+</div>
+
+
+<div class="vision-item">
+
+<span>
+⌁
+</span>
+
+<h3>
+Long-Term Opportunities
+</h3>
+
+<p>
+Pathways to professional
+football.
+</p>
+
+</div>
+
+
+<div class="vision-item">
+
+<span>
+🤝
+</span>
+
+<h3>
+Global Connections
+</h3>
+
+<p>
+Access to international
+networks.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     PLAYERS
+======================================================= -->
+
+<section
+class="players"
+id="players"
+>
+
+<div class="container">
+
+
+<div class="players-header">
+
+
+<div>
+
+<div class="section-kicker">
+Featured Players
+</div>
+
+
+<h2 class="players-title">
+
+Our Talented
+
+<span class="gold">
+Players
+</span>
+
+</h2>
+
+
+<p>
+Meet some of the skilled and determined players
+in our academy. These are the future stars.
+</p>
+
+</div>
+
+
+<a
+href="#scout"
+class="btn btn-gold"
+>
+View All Players →
+</a>
+
+
+</div>
+
+
+<div class="player-grid">
+
+
+<!-- PLAYER 1 -->
+
+<article class="player-card">
+
+<div class="player-image">
+
+<img
+src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=700&q=85"
+alt="Football player"
+>
+
+</div>
+
+
+<div class="player-info">
+
+<h3>
+Halliru Bawa Usman
+</h3>
+
+<p>
+Striker | Age 17
+</p>
+
+</div>
+
+
+<div class="player-arrow">
+→
+</div>
+
+</article>
+
+
+<!-- PLAYER 2 -->
+
+<article class="player-card">
+
+<div class="player-image">
+
+<img
+src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=700&q=85"
+alt="Football player"
+>
+
+</div>
+
+
+<div class="player-info">
+
+<h3>
+Abdulrahman Sani
+</h3>
+
+<p>
+Midfielder | Age 17
+</p>
+
+</div>
+
+
+<div class="player-arrow">
+→
+</div>
+
+</article>
+
+
+<!-- PLAYER 3 -->
+
+<article class="player-card">
+
+<div class="player-image">
+
+<img
+src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=700&q=85"
+alt="Football player"
+>
+
+</div>
+
+
+<div class="player-info">
+
+<h3>
+Victor Oladele
+</h3>
+
+<p>
+Defender | Age 16
+</p>
+
+</div>
+
+
+<div class="player-arrow">
+→
+</div>
+
+</article>
+
+
+<!-- PLAYER 4 -->
+
+<article class="player-card">
+
+<div class="player-image">
+
+<img
+src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&fit=crop&w=700&q=85"
+alt="Football player"
+>
+
+</div>
+
+
+<div class="player-info">
+
+<h3>
+Ibrahim Lawal
+</h3>
+
+<p>
+Winger | Age 17
+</p>
+
+</div>
+
+
+<div class="player-arrow">
+→
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section><img
+src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=800&q=85"
+alt="Football training"
+>
+
+
+<img
+src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=85"
+alt="Football match"
+>
+
+
+<img
+src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=800&q=85"
+alt="Football player"
+>
+
+
+</div>
+
+
+<div class="testimonial">
+
+
+<div class="section-kicker">
+What People Say
+</div>
+
+
+<h2>
+
+Real Stories.
+
+<span class="gold">
+Real Impact.
+</span>
+
+</h2>
+
+
+<p class="quote">
+
+“BBW gave me the platform to be seen. Their support,
+exposure and professionalism are second to none.
+I'm grateful to be part of the academy.”
+
+</p>
+
+
+<div class="testimonial-person">
+
+<img
+class="testimonial-avatar"
+src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+alt="Player"
+>
+
+
+<div>
+
+<strong>
+Ibrahim Musa
+</strong>
+
+<span>
+Player
+</span>
+
+</div>
+
+
+<div class="stars">
+★★★★★
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     CTA
+======================================================= -->
+
+<section
+class="cta"
+id="scout"
+>
+
+<div class="container cta-grid">
+
+
+<div>
+
+<div class="section-kicker">
+Your Next Opportunity
+</div>
+
+
+<h2>
+
+Get Scouted.
+
+<span class="gold">
+Be Seen.
+Go Further.
+</span>
+
+</h2>
+
+
+<p>
+Join BBW Football Academy today and take the first
+step towards your football future.
+</p>
+
+</div>
+
+
+<a
+href="#"
+class="btn btn-gold"
+onclick="openWhatsApp(); return false;"
+>
+Get Scouted Now →
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer
+class="footer"
+id="contact"
+>
+
+<div class="container">
+
+
+<div class="footer-main">
+
+
+<div class="footer-about">
+
+
+<a
+href="#home"
+class="footer-logo"
+>
+
+<img
+src="https://raw.githubusercontent.com/joshuadetoye23-beep/bbwfootballacademy/main/Logo.png"
+alt="BBW Football Academy Logo"
+onerror="this.onerror=null;this.src='./Logo.png';"
+>
+
+
+<div>
+
+<strong>
+BBW
+</strong>
+
+<span>
+FOOTBALL ACADEMY
+</span>
+
+</div>
+
+</a>
+
+
+<p>
+Developing talented footballers through discovery,
+development, exposure and professional opportunities.
+</p>
+
+
+</div>
+
+
+<div>
+
+<h4>
+Quick Links
+</h4>
+
+
+<div class="footer-links">
+
+<a href="#home">
+Home
+</a>
+
+<a href="#about">
+About
+</a>
+
+<a href="#players">
+Players
+</a>
+
+<a href="#vision">
+Our Vision
+</a>
+
+<a href="#gallery">
+Gallery
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h4>
+Contact Us
+</h4>
+
+
+<div class="contact-item">
+
+<span>
+☎
+</span>
+
+<a href="tel:+2348080976262">
++234 808 097 6262
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<span>
+✉
+</span>
+
+<span>
+info@bbwfootballacademy.com
+</span>
+
+</div>
+
+
+<div class="contact-item">
+
+<span>
+📍
+</span>
+
+<span>
+Kaduna, Nigeria
+</span>
+
+</div>
+
+
+<div class="socials">
+
+<a href="#" aria-label="Instagram">
+◎
+</a>
+
+<a href="#" aria-label="X">
+𝕏
+</a>
+
+<a href="#" aria-label="YouTube">
+▶
+</a>
+
+<a
+href="https://www.tiktok.com/@bbw_football_academy"
+target="_blank"
+rel="noopener"
+aria-label="TikTok">
+♪
+</a>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+<div class="motto">
+DREAM · TRAIN · ACHIEVE
+</div>
+
+
+<div>
+© 2026 BBW Football Academy. All rights reserved.
+</div>
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+/* ============================
+   MOBILE MENU
+============================ */
+
+const menuBtn =
+    document.getElementById("menuBtn");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+menuBtn.addEventListener("click", function(){
+
+    navLinks.classList.toggle("open");
+
+    if(navLinks.classList.contains("open")){
+
+        menuBtn.textContent = "×";
+
+    } else {
+
+        menuBtn.textContent = "☰";
+
+    }
+
+});
+
+
+/* Close mobile menu */
+
+document.querySelectorAll(
+    ".nav-links a"
+).forEach(function(link){
+
+    link.addEventListener(
+        "click",
+        function(){
+
+            navLinks.classList.remove("open");
+
+            menuBtn.textContent = "☰";
+
+        }
+    );
+
+});
+
+
+/* ============================
+   WHATSAPP SCOUTING BUTTON
+============================ */
+
+function openWhatsApp(){
+
+    const phone =
+        "2348080976262";
+
+    const message =
+        "Hello BBW Football Academy. I am interested in getting scouted / joining the academy. Please send me more information.";
+
+    const whatsappURL =
+        "https://wa.me/" +
+        phone +
+        "?text=" +
+        encodeURIComponent(message);
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+
+/* ============================
+   ACTIVE NAVIGATION
+============================ */
+
+const sections =
+    document.querySelectorAll(
+        "section[id]"
+    );
+
+const navItems =
+    document.querySelectorAll(
+        ".nav-links a"
+    );
+
+
+const observer =
+    new IntersectionObserver(
+        function(entries){
+
+            entries.forEach(
+                function(entry){
+
+                    if(entry.isIntersecting){
+
+                        navItems.forEach(
+                            function(item){
+
+                                item.classList.remove(
+                                    "active"
+                                );
+
+                            }
+                        );
+
+
+                        const active =
+                            document.querySelector(
+                                '.nav-links a[href="#' +
+                                entry.target.id +
+                                '"]'
+                            );
+
+                        if(active){
+
+                            active.classList.add(
+                                "active"
+                            );
+
+                        }
+
+                    }
+
+                }
+            );
+
+        },
+        {
+            rootMargin:
+                "-40% 0px -50% 0px"
+        }
+    );
+
+
+sections.forEach(
+    function(section){
+
+        observer.observe(section);
+
+    }
+);
+
+
+/* ============================
+   PLAYER CARD CLICK EFFECT
+============================ */
+
+document.querySelectorAll(
+    ".player-card"
+).forEach(function(card){
+
+    card.addEventListener(
+        "click",
+        function(){
+
+            const name =
+                card.querySelector(
+                    "h3"
+                ).textContent;
+
+            console.log(
+                "Selected player:",
+                name
+            );
+
+        }
+    );
+
+});
+
+
+</script>
+
+</body>
+</html>
