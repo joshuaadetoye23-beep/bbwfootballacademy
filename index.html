@@ -3195,9 +3195,8 @@ function openPlayerProfile(card){
     cvViewer.src = player.cv;
     cvNotice.textContent = "If the CV PDF has been uploaded to " + player.cv + ", it will appear above and can be viewed or downloaded. If it has not been uploaded yet, add the PDF to that exact folder/path.";
 
-    profileGallery.innerHTML = player.photos.map(function(photo, index){
-        return '<img src="' + photo + '" alt="' + player.name + ' action photo ' + (index + 1) + '" loading="lazy" onerror="this.style.display=\'none\'">';
-    }).join("");
+    // Action photos are intentionally blank until the player's real action images are uploaded.
+    profileGallery.innerHTML = "";
 
     profileVideos.innerHTML = player.videos.map(function(video, index){
         const videoTitles = [
