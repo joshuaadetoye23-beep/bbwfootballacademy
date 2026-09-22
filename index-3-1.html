@@ -1,0 +1,3286 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="BBW Football Academy - Talent Discovery, Player Development and Professional Exposure." name="description"/>
+
+<link rel="icon" type="image/png" href="./Logo.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsOrganization",
+  "name": "BBW Football Academy",
+  "url": "https://bbwfootballacademy.pages.dev/",
+  "logo": "https://bbwfootballacademy.pages.dev/Logo.png",
+  "description": "BBW Football Academy is a football academy in Kaduna, Nigeria focused on developing young footballers through quality training, discipline, player development and professional opportunities.",
+  "telephone": "+2348080976262",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kaduna",
+    "addressCountry": "NG"
+  },
+  "sameAs": [
+    "https://www.tiktok.com/@bbw_football_acadamy?_r=1&_t=ZS-99vnB6APiGj",
+    "https://www.facebook.com/share/1CX3MBGke5/"
+  ]
+}
+</script>
+
+<title>BBW Football Academy | Talent Discovery &amp; Player Development</title>
+<style>
+
+/* =========================================================
+   BBW FOOTBALL ACADEMY
+   MODERN CINEMATIC LANDING PAGE
+========================================================= */
+
+:root {
+    --navy: #03152f;
+    --navy-dark: #020e20;
+    --navy-light: #082653;
+    --blue: #0d438b;
+    --gold: #ffd21a;
+    --gold-dark: #e6ad00;
+    --white: #ffffff;
+    --light: #f4f6f9;
+    --text: #0a1d3b;
+    --muted: #68758a;
+    --border: rgba(255,255,255,.15);
+    --shadow: 0 20px 50px rgba(0,0,0,.25);
+    --container: 1180px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--navy);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+.container {
+    width: min(92%, var(--container));
+    margin: auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+    background: rgba(2, 18, 43, .90);
+    backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.nav {
+    min-height: 76px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.logo-text strong {
+    display: block;
+
+    color: white;
+
+    font-size: 23px;
+    line-height: 1;
+
+    font-weight: 900;
+}
+
+.logo-text span {
+    display: block;
+
+    color: white;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    margin-top: 4px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    color: white;
+}
+
+.nav-links a {
+    position: relative;
+    padding: 29px 0;
+
+    transition: .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--gold);
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 18px;
+
+    width: 100%;
+    height: 3px;
+
+    background: var(--gold);
+
+    transform: scaleX(0);
+    transition: .3s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    transform: scaleX(1);
+}
+
+.header-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 22px;
+
+    border-radius: 50px;
+
+    background: var(--gold);
+    color: var(--navy);
+
+    font-size: 13px;
+    font-weight: 900;
+
+    transition: .3s;
+}
+
+.header-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(255,210,26,.25);
+}
+
+.menu-btn {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: white;
+
+    font-size: 29px;
+
+    cursor: pointer;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 720px;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 100px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(1,14,34,.98) 0%,
+            rgba(3,23,50,.90) 38%,
+            rgba(3,23,50,.50) 68%,
+            rgba(3,23,50,.15) 100%
+        ),
+        url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=2200&q=90")
+        center/cover no-repeat;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 120px;
+
+    background: linear-gradient(
+        transparent,
+        rgba(3,21,47,.75)
+    );
+
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 650px;
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    color: white;
+
+    font-size: 12px;
+    font-weight: 900;
+
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.eyebrow::before {
+    content: "";
+
+    width: 35px;
+    height: 3px;
+
+    background: var(--gold);
+
+    border-radius: 5px;
+}
+
+.hero h1 {
+    text-transform: uppercase;
+
+    font-size: clamp(52px, 7vw, 88px);
+
+    line-height: .92;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 .white {
+    display: block;
+    color: white;
+}
+
+.hero h1 .gold {
+    display: block;
+    color: var(--gold);
+}
+
+.hero-tagline {
+    font-size: 19px;
+
+    font-weight: 800;
+
+    margin-bottom: 15px;
+}
+
+.hero-tagline span {
+    color: var(--gold);
+
+    margin: 0 7px;
+}
+
+.hero-description {
+    max-width: 570px;
+
+    color: #dbe4f0;
+
+    font-size: 15px;
+
+    line-height: 1.55;
+
+    margin-bottom: 28px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 13px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 46px;
+
+    padding: 13px 24px;
+
+    border-radius: 50px;
+
+    font-size: 13px;
+
+    font-weight: 900;
+
+    transition: .3s;
+}
+
+.btn-gold {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+.btn-gold:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(255,210,26,.25);
+}
+
+.btn-outline {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--navy);
+}
+
+/* =========================================================
+   FEATURE STRIP
+========================================================= */
+
+.feature-strip {
+    position: relative;
+    z-index: 5;
+
+    background: #041a37;
+
+    border-top: 1px solid rgba(255,210,26,.35);
+    border-bottom: 1px solid rgba(255,255,255,.12);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    min-height: 92px;
+
+    padding: 15px 22px;
+
+    border-right: 1px solid rgba(255,255,255,.20);
+}
+
+.feature:last-child {
+    border-right: none;
+}
+
+.feature-icon {
+    flex-shrink: 0;
+
+    width: 44px;
+    height: 44px;
+
+    display: grid;
+    place-items: center;
+
+    color: var(--gold);
+
+    font-size: 31px;
+}
+
+.feature h3 {
+    font-size: 13px;
+
+    margin-bottom: 3px;
+}
+
+.feature p {
+    color: #b7c4d6;
+
+    font-size: 10px;
+
+    line-height: 1.35;
+}
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.about {
+    background: var(--navy-dark);
+
+    padding: 0;
+}
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 430px;
+}
+
+.about-image {
+    position: relative;
+
+    min-height: 430px;
+
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-image::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: -1px;
+    bottom: 0;
+
+    width: 100px;
+
+    background: var(--navy-dark);
+
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.about-label {
+    position: absolute;
+
+    left: 55px;
+    bottom: 35px;
+
+    z-index: 2;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+
+    line-height: 1.05;
+
+    font-style: italic;
+
+    transform: rotate(-5deg);
+
+    text-shadow: 0 4px 12px rgba(0,0,0,.6);
+}
+
+.about-label span {
+    color: var(--gold);
+}
+
+.about-content {
+    padding: 60px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-kicker {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.section-kicker::before {
+    content: "";
+
+    width: 24px;
+    height: 3px;
+
+    background: var(--gold);
+}
+
+.section-title {
+    font-size: clamp(31px, 4vw, 46px);
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 15px;
+}
+
+.section-title .gold {
+    color: var(--gold);
+}
+
+.about-content > p {
+    color: #bec9d8;
+
+    max-width: 530px;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    margin-bottom: 28px;
+}
+
+.about-icons {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    border-top: 1px solid rgba(255,255,255,.16);
+}
+
+.about-icon {
+    text-align: center;
+
+    padding: 18px 10px 0;
+
+    border-right: 1px solid rgba(255,255,255,.16);
+}
+
+.about-icon:last-child {
+    border-right: none;
+}
+
+.about-icon span {
+    display: block;
+
+    color: var(--gold);
+
+    font-size: 26px;
+
+    margin-bottom: 7px;
+}
+
+.about-icon strong {
+    display: block;
+
+    color: white;
+
+    font-size: 10px;
+
+    line-height: 1.25;
+}
+
+/* =========================================================
+   VISION
+========================================================= */
+
+.vision {
+    background: var(--light);
+
+    color: var(--text);
+
+    padding: 65px 0;
+}
+
+.vision-grid {
+    display: grid;
+
+    grid-template-columns: .85fr 1.15fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.vision .section-kicker {
+    color: var(--text);
+}
+
+.vision-title {
+    color: var(--navy);
+
+    font-size: clamp(34px, 4vw, 50px);
+
+    line-height: 1.02;
+
+    margin-bottom: 15px;
+}
+
+.vision-description {
+    color: #56657b;
+
+    font-size: 14px;
+
+    max-width: 490px;
+
+    margin-bottom: 22px;
+}
+
+.vision-grid-box {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-left: 1px solid #d5dbe4;
+}
+
+.vision-item {
+    padding: 20px;
+
+    border-right: 1px solid #d5dbe4;
+}
+
+.vision-item:nth-child(4),
+.vision-item:nth-child(5),
+.vision-item:nth-child(6) {
+    border-top: 1px solid #d5dbe4;
+}
+
+.vision-item span {
+    display: block;
+
+    color: var(--navy);
+
+    font-size: 28px;
+
+    margin-bottom: 9px;
+}
+
+.vision-item h3 {
+    color: var(--navy);
+
+    font-size: 12px;
+
+    margin-bottom: 5px;
+}
+
+.vision-item p {
+    color: #6c7889;
+
+    font-size: 10px;
+
+    line-height: 1.35;
+}
+
+/* =========================================================
+   PLAYERS SECTION
+========================================================= */
+
+.players {
+    padding: 70px 0;
+
+    background:
+        linear-gradient(
+            rgba(3,22,48,.93),
+            rgba(3,22,48,.93)
+        ),
+        url("https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=2200&q=85")
+        center/cover no-repeat;
+}
+
+.players-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+.players-header p {
+    color: #b7c5d7;
+
+    max-width: 420px;
+
+    font-size: 13px;
+}
+
+.players-title {
+    font-size: clamp(33px, 4vw, 46px);
+
+    line-height: 1;
+
+    margin-bottom: 8px;
+}
+
+.players-title .gold {
+    color: var(--gold);
+}
+
+.player-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+}
+
+.player-card {
+    position: relative;
+
+    overflow: hidden;
+
+    background: #082653;
+
+    border: 1px solid rgba(255,255,255,.10);
+
+    border-radius: 8px;
+
+    transition: .35s;
+}
+
+.player-card:hover {
+    transform: translateY(-8px);
+
+    border-color: var(--gold);
+
+    box-shadow: 0 20px 45px rgba(0,0,0,.35);
+}
+
+.player-image {
+    position: relative;
+
+    height: 285px;
+
+    overflow: hidden;
+
+    background: #0a315f;
+}
+
+.player-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+}
+
+.player-card:hover .player-image img {
+    transform: scale(1.06);
+}
+
+.player-info {
+    padding: 13px 13px 15px;
+
+    background: #061d40;
+}
+
+.player-info h3 {
+    color: white;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 2px;
+}
+
+.player-info p {
+    color: #aebed1;
+
+    font-size: 10px;
+}
+
+.player-arrow {
+    position: absolute;
+
+    right: 10px;
+    bottom: 10px;
+
+    width: 27px;
+    height: 27px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+
+    color: var(--navy);
+
+    font-weight: 900;
+
+    font-size: 14px;
+}
+
+/* =========================================================
+   GALLERY / TESTIMONIAL
+========================================================= */
+
+.gallery {
+    padding: 55px 0;
+
+    background: #041a37;
+}
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: 1.15fr .85fr;
+
+    gap: 25px;
+
+    align-items: center;
+}
+
+.gallery-images {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 8px;
+}
+
+.gallery-images img {
+    width: 100%;
+    height: 165px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+.gallery-images img:nth-child(2) {
+    transform: translateY(15px);
+}
+
+.testimonial {
+    padding: 15px 5px;
+}
+
+.testimonial .section-kicker {
+    margin-bottom: 10px;
+}
+
+.testimonial h2 {
+    font-size: 26px;
+
+    margin-bottom: 10px;
+}
+
+.testimonial h2 .gold {
+    color: var(--gold);
+}
+
+.quote {
+    color: #c6d2e1;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+}
+
+.testimonial-person {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.testimonial-avatar {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.testimonial-person strong {
+    display: block;
+
+    font-size: 11px;
+}
+
+.testimonial-person span {
+    color: #aab8ca;
+
+    font-size: 9px;
+}
+
+.stars {
+    color: var(--gold);
+
+    margin-left: auto;
+
+    letter-spacing: 2px;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 52px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3,22,48,.97),
+            rgba(3,22,48,.76)
+        ),
+        url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=2200&q=85")
+        center/cover no-repeat;
+}
+
+.cta::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 35%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,210,26,.08)
+    );
+
+    pointer-events: none;
+}
+
+.cta-grid {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.cta h2 {
+    font-size: clamp(31px, 4vw, 45px);
+
+    line-height: 1;
+
+    margin-bottom: 8px;
+}
+
+.cta h2 .gold {
+    color: var(--gold);
+}
+
+.cta p {
+    color: #bdc9d9;
+
+    font-size: 12px;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background: #021127;
+
+    padding: 42px 0 20px;
+}
+
+.footer-main {
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 30px;
+
+    border-bottom: 1px solid rgba(255,255,255,.13);
+}
+
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 13px;
+}
+
+.footer-logo img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+}
+
+.footer-logo strong {
+    display: block;
+
+    color: white;
+
+    font-size: 23px;
+}
+
+.footer-logo span {
+    display: block;
+
+    color: white;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+}
+
+.footer-about p {
+    color: #8998ad;
+
+    font-size: 11px;
+
+    max-width: 290px;
+}
+
+.footer h4 {
+    color: white;
+
+    font-size: 13px;
+
+    margin-bottom: 13px;
+}
+
+.footer-links {
+    display: grid;
+
+    gap: 7px;
+
+    color: #9eacbf;
+
+    font-size: 11px;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+.contact-item {
+    display: flex;
+
+    gap: 8px;
+
+    color: #9eacbf;
+
+    font-size: 11px;
+
+    margin-bottom: 9px;
+}
+
+.socials {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 12px;
+}
+
+.socials a {
+    width: 31px;
+    height: 31px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    border-radius: 50%;
+
+    color: white;
+
+    font-size: 12px;
+
+    transition: .3s;
+}
+
+.socials a:hover {
+    color: var(--navy);
+
+    background: var(--gold);
+
+    border-color: var(--gold);
+}
+
+.footer-bottom {
+    padding-top: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    color: #74849a;
+
+    font-size: 9px;
+}
+
+.motto {
+    color: var(--gold);
+
+    letter-spacing: 4px;
+
+    font-weight: 900;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:1000px) {
+
+    .nav-links {
+        gap: 17px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .header-btn {
+        padding: 11px 16px;
+        font-size: 11px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vision-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:760px) {
+
+    .nav {
+        min-height: 70px;
+    }
+
+    .logo img {
+        width: 53px;
+        height: 53px;
+    }
+
+    .logo-text strong {
+        font-size: 19px;
+    }
+
+    .logo-text span {
+        font-size: 8px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 74px;
+
+        left: 4%;
+        right: 4%;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 10px;
+
+        background: #03152f;
+
+        border: 1px solid rgba(255,255,255,.12);
+
+        border-radius: 12px;
+
+        box-shadow: var(--shadow);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 13px;
+
+        border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a::after {
+        display: none;
+    }
+
+    .hero {
+        min-height: 680px;
+
+        padding-top: 135px;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(1,14,34,.96),
+                rgba(3,23,50,.66)
+            ),
+            url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1400&q=85")
+            center/cover no-repeat;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero-tagline {
+        font-size: 16px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature:nth-child(2) {
+        border-right: none;
+    }
+
+    .feature:nth-child(3),
+    .feature:nth-child(4) {
+        border-top: 1px solid rgba(255,255,255,.15);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        min-height: 350px;
+    }
+
+    .about-content {
+        padding: 50px 5%;
+    }
+
+    .about-icons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-icon:nth-child(2) {
+        border-right: none;
+    }
+
+    .about-icon:nth-child(3),
+    .about-icon:nth-child(4) {
+        border-top: 1px solid rgba(255,255,255,.16);
+    }
+
+    .vision-grid-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .vision-item:nth-child(3) {
+        border-right: none;
+    }
+
+    .vision-item:nth-child(4),
+    .vision-item:nth-child(5),
+    .vision-item:nth-child(6) {
+        border-top: 1px solid #d5dbe4;
+    }
+
+    .vision-item:nth-child(4) {
+        border-right: 1px solid #d5dbe4;
+    }
+
+    .players-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-grid {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        text-align: center;
+    }
+}
+
+@media(max-width:500px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+    .hero-tagline {
+        line-height: 1.7;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+
+    .buttons .btn {
+        width: 100%;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        border-right: none !important;
+
+        border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .feature:last-child {
+        border-bottom: none;
+    }
+
+    .player-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+    }
+
+    .player-image {
+        height: 220px;
+    }
+
+    .player-info h3 {
+        font-size: 10px;
+    }
+
+    .gallery-images {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-images img {
+        height: 135px;
+    }
+
+    .gallery-images img:last-child {
+        display: none;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-about {
+        grid-column: auto;
+    }
+
+}
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.hero-content {
+    animation: fadeUp .9s ease both;
+}
+
+
+/* =========================================================
+   PLAYER PROFILE / DIGITAL PLAYER PASSPORT
+========================================================= */
+.player-card { cursor: pointer; }
+.player-profile-modal { position: fixed; inset: 0; z-index: 10003; display: none; align-items: flex-start; justify-content: center; padding: 20px; background: rgba(0,8,20,.88); backdrop-filter: blur(12px); overflow-y: auto; }
+.player-profile-modal.open { display: flex; }
+.player-profile-panel { position: relative; width: min(1050px,100%); margin: 20px auto; background: #f4f6f9; color: var(--text); border-radius: 16px; overflow: hidden; box-shadow: 0 35px 90px rgba(0,0,0,.55); animation: passportIn .35s ease both; }
+.profile-top { position: relative; background: linear-gradient(135deg,#03152f,#082653); padding: 24px 28px; color: white; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.profile-brand { display: flex; align-items: center; gap: 12px; }
+.profile-brand img { width: 55px; height: 55px; object-fit: contain; }
+.profile-brand strong { display: block; font-size: 20px; }
+.profile-brand span { display: block; font-size: 8px; letter-spacing: 1.5px; font-weight: 700; }
+.profile-kicker { color: var(--gold); font-size: 10px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; }
+.profile-close { position: absolute; top: 14px; right: 14px; width: 40px; height: 40px; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; background: rgba(0,0,0,.22); color: white; font-size: 24px; cursor: pointer; z-index: 3; }
+.profile-hero { display: grid; grid-template-columns: 300px 1fr; background: white; }
+.profile-photo { min-height: 390px; background: #082653; }
+.profile-photo img { width: 100%; height: 100%; min-height: 390px; object-fit: cover; }
+.profile-main { padding: 34px; }
+.profile-name { color: var(--navy); font-size: clamp(30px,5vw,48px); line-height: 1; text-transform: uppercase; margin: 5px 0 10px; }
+.profile-position { display: inline-flex; padding: 8px 13px; border-radius: 30px; background: var(--gold); color: var(--navy); font-size: 11px; font-weight: 900; margin-bottom: 25px; }
+.profile-grid { display: grid; grid-template-columns: repeat(2,1fr); border-top: 1px solid #d5dbe4; border-left: 1px solid #d5dbe4; }
+.profile-field { padding: 14px; border-right: 1px solid #d5dbe4; border-bottom: 1px solid #d5dbe4; }
+.profile-field span { display: block; color: #68758a; font-size: 9px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+.profile-field strong { display: block; color: var(--navy); font-size: 13px; }
+.profile-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.profile-action-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 43px; padding: 11px 18px; border-radius: 30px; font-size: 11px; font-weight: 900; border: none; cursor: pointer; transition: .25s; }
+.profile-action-btn.primary { background: var(--gold); color: var(--navy); }
+.profile-action-btn.secondary { background: var(--navy); color: white; }
+.profile-action-btn:hover { transform: translateY(-2px); }
+.profile-section { padding: 32px; border-top: 1px solid #dfe4eb; background: white; }
+.profile-section.dark { background: #041a37; color: white; }
+.profile-section h3 { color: var(--navy); font-size: 18px; margin-bottom: 15px; }
+.profile-section.dark h3 { color: white; }
+.profile-section p { color: #5f6d80; font-size: 13px; line-height: 1.7; }
+.profile-section.dark p { color: #c2cede; }
+.profile-cv-wrap { display: grid; grid-template-columns: 1fr; gap: 15px; }
+.profile-cv-viewer { width: 100%; height: 520px; border: 1px solid #d5dbe4; border-radius: 10px; background: #eef1f5; }
+.profile-cv-viewer iframe { width: 100%; height: 100%; border: 0; border-radius: 10px; }
+.profile-media-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+.profile-photo-slot { position: relative; overflow: hidden; height: 180px; border-radius: 8px; background: #e9edf2; border: 1px solid #d5dbe4; }
+.profile-photo-slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.profile-photo-slot.empty { display: grid; place-items: center; background: linear-gradient(135deg,#eef1f5,#dfe5eb); }
+.profile-photo-slot.empty::before { content: ""; width: 42px; height: 42px; border: 2px solid #aeb8c4; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-58%); }
+.profile-photo-slot.empty::after { content: attr(data-label); position: absolute; left: 0; right: 0; bottom: 0; padding: 9px 6px; text-align: center; background: rgba(3,21,47,.82); color: white; font-size: 9px; font-weight: 900; letter-spacing: 1px; }
+.profile-photo-slot .photo-number { position: absolute; top: 7px; left: 7px; z-index: 2; min-width: 25px; height: 25px; padding: 0 6px; display: grid; place-items: center; border-radius: 50%; background: var(--gold); color: var(--navy); font-size: 8px; font-weight: 900; }
+.profile-video-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 15px; }
+.profile-video-card { background: #020e20; border-radius: 10px; overflow: hidden; }
+.profile-video-card video { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; background: #020e20; }
+.profile-video-card h4 { color: white; font-size: 11px; padding: 12px 14px; }
+.profile-empty { padding: 22px; border: 1px dashed #c6ced9; border-radius: 10px; color: #68758a; font-size: 12px; line-height: 1.6; background: #fafbfc; }
+.profile-footer { padding: 14px 24px; background: #021127; color: #aebed1; display: flex; justify-content: space-between; gap: 15px; font-size: 9px; letter-spacing: 1px; }
+@keyframes passportIn { from { opacity: 0; transform: translateY(25px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media(max-width:750px) { .player-profile-modal { padding: 8px; } .profile-panel { margin: 5px auto; } .profile-top { padding: 20px 18px; } .profile-hero { grid-template-columns: 1fr; } .profile-photo,.profile-photo img { min-height: 300px; height: 300px; } .profile-main,.profile-section { padding: 24px 18px; } .profile-media-grid { grid-template-columns: repeat(2,1fr); } .profile-photo-slot { height: 150px; } .profile-video-grid { grid-template-columns: 1fr; } .profile-cv-viewer { height: 430px; } .profile-footer { flex-direction: column; text-align: center; } }
+
+/* =========================================================
+   ALL PLAYERS DIRECTORY
+========================================================= */
+.all-players-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10001;
+    display: none;
+    background: rgba(1,10,25,.96);
+    backdrop-filter: blur(12px);
+    overflow-y: auto;
+    padding: 30px 0 50px;
+}
+.all-players-modal.open { display: block; }
+.all-players-inner { width: min(1180px,92%); margin: auto; }
+.all-players-head { display:flex; align-items:center; justify-content:space-between; gap:20px; margin-bottom:30px; padding-top:10px; }
+.all-players-kicker { color:var(--gold); font-size:11px; font-weight:900; letter-spacing:3px; text-transform:uppercase; margin-bottom:8px; }
+.all-players-title { font-size:clamp(32px,5vw,52px); line-height:1; }
+.all-players-subtitle { color:#aebed1; font-size:13px; margin-top:10px; }
+.all-players-close { width:44px; height:44px; flex-shrink:0; border:1px solid rgba(255,255,255,.25); border-radius:50%; background:rgba(255,255,255,.06); color:white; font-size:25px; cursor:pointer; }
+.all-players-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:15px; }
+.squad-card { position:relative; overflow:hidden; background:#082653; border:1px solid rgba(255,255,255,.10); border-radius:9px; cursor:pointer; transition:.3s; }
+.squad-card:hover { transform:translateY(-6px); border-color:var(--gold); box-shadow:0 18px 40px rgba(0,0,0,.35); }
+.squad-number { position:absolute; top:10px; left:10px; z-index:2; width:32px; height:32px; display:grid; place-items:center; border-radius:50%; background:var(--gold); color:var(--navy); font-size:12px; font-weight:900; }
+.squad-card img { width:100%; height:260px; object-fit:cover; }
+.squad-info { padding:13px; background:#061d40; }
+.squad-info strong { display:block; color:white; font-size:12px; text-transform:uppercase; margin-bottom:4px; }
+.squad-info span { color:#aebed1; font-size:10px; }
+@media(max-width:900px) { .all-players-grid { grid-template-columns:repeat(3,1fr); } }
+@media(max-width:650px) { .all-players-modal { padding-top:20px; } .all-players-head { align-items:flex-start; } .all-players-title { font-size:34px; } .all-players-grid { grid-template-columns:repeat(2,1fr); gap:9px; } .squad-card img { height:210px; } .squad-info { padding:10px; } .squad-info strong { font-size:9px; } .squad-info span { font-size:8px; } }
+
+
+/* ============================
+   INTERNAL SITE PAGES
+============================ */
+.site-page-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: none;
+    padding: 18px;
+    background: rgba(3,12,28,.96);
+    backdrop-filter: blur(12px);
+    overflow-y: auto;
+}
+.site-page-modal.open { display: block; }
+.site-page-inner {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    min-height: calc(100vh - 36px);
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 18px;
+    background: #061a35;
+    box-shadow: 0 30px 90px rgba(0,0,0,.45);
+    overflow: hidden;
+}
+.site-page-head {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 24px;
+    background: rgba(5,18,38,.96);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.site-page-kicker {
+    margin-bottom: 6px;
+    color: #ffd21a;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+.site-page-title {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(28px, 5vw, 48px);
+    line-height: 1;
+}
+.site-page-title span { color: #ffd21a; }
+.site-page-close {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 50%;
+    background: rgba(255,255,255,.05);
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.site-page-body { padding: 34px; }
+.site-page-lead {
+    max-width: 780px;
+    color: rgba(255,255,255,.72);
+    font-size: 16px;
+    line-height: 1.8;
+}
+.site-page-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+}
+.site-page-card {
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 14px;
+    background: rgba(255,255,255,.035);
+}
+.site-page-card-icon {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    background: #ffd21a;
+    color: #061a35;
+    font-size: 20px;
+}
+.site-page-card h3 { margin: 0 0 9px; color: #fff; font-size: 17px; }
+.site-page-card p { margin: 0; color: rgba(255,255,255,.65); line-height: 1.65; font-size: 13px; }
+.site-page-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.site-page-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-top: 28px;
+}
+.site-page-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.09);
+}
+.site-contact-list { display: grid; gap: 14px; margin-top: 26px; max-width: 700px; }
+.site-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 17px;
+    border: 1px solid rgba(255,255,255,.09);
+    border-radius: 12px;
+    background: rgba(255,255,255,.035);
+}
+.site-contact-icon { font-size: 20px; }
+.site-contact-item strong { display:block; color:#fff; margin-bottom:4px; }
+.site-contact-item span, .site-contact-item a { color:rgba(255,255,255,.68); text-decoration:none; }
+@media(max-width:800px){
+    .site-page-grid { grid-template-columns: 1fr 1fr; }
+    .site-page-gallery { grid-template-columns: 1fr 1fr; }
+    .site-page-body { padding: 24px 18px; }
+}
+@media(max-width:560px){
+    .site-page-modal { padding: 8px; }
+    .site-page-inner { min-height: calc(100vh - 16px); border-radius: 12px; }
+    .site-page-head { padding: 16px; }
+    .site-page-grid, .site-page-gallery { grid-template-columns: 1fr; }
+    .site-page-gallery img { height: 220px; }
+}
+
+
+/* =========================================================
+   BBW REFERENCE DESIGN OVERRIDES — BLACK / WHITE / YELLOW
+========================================================= */
+:root{--navy:#05090b;--navy-dark:#030607;--navy-light:#10161a;--gold:#ffd21a;--gold-dark:#e6ad00;--white:#fff;--light:#f4f4f1;--text:#0b1115;--muted:#667078;--container:1240px;}
+body{background:var(--navy);font-family:Inter,Arial,Helvetica,sans-serif;color:#fff;}
+.header{height:88px;background:rgba(3,7,9,.94);border-bottom:1px solid rgba(255,255,255,.09);backdrop-filter:blur(16px);}
+.nav{min-height:88px;max-width:1240px}.logo img{width:64px;height:72px}.logo-text strong{font-size:25px}.logo-text span{font-size:9px;letter-spacing:1.7px}.nav-links{gap:34px;font-size:13px}.nav-links a{padding:34px 0}.nav-links a::after{bottom:19px;height:3px}.header-btn{padding:13px 25px;min-width:118px;box-shadow:none}.header-btn:hover{box-shadow:0 10px 28px rgba(255,210,26,.22)}
+.hero{min-height:760px;padding-top:88px;background:linear-gradient(90deg,rgba(2,7,8,.96) 0%,rgba(2,8,10,.86) 30%,rgba(2,8,10,.38) 66%,rgba(2,8,10,.10) 100%),url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=2200&q=90") center/cover no-repeat;overflow:hidden}
+.hero::after{height:190px;background:linear-gradient(transparent,var(--navy));}.hero-overlay{position:absolute;inset:0;background:radial-gradient(circle at 75% 40%,transparent 0,rgba(0,0,0,.15) 45%,rgba(0,0,0,.48) 100%)}
+.hero-inner{position:relative;z-index:3;min-height:670px;display:flex;align-items:center;justify-content:space-between}.hero-copy{max-width:720px;padding-top:30px}.eyebrow{font-size:11px;letter-spacing:4px;margin-bottom:18px}.eyebrow span{display:inline-block;width:42px;height:4px;background:var(--gold);vertical-align:middle;margin-right:10px}.hero h1{text-transform:none;font-size:clamp(56px,7.5vw,102px);line-height:.91;letter-spacing:-4px;margin:0 0 25px}.hero h1 strong{color:var(--gold);font-weight:900}.hero-lead{max-width:610px;color:#e0e4e5;font-size:16px;line-height:1.7;margin-bottom:30px}.hero-meta{display:flex;align-items:center;gap:17px;margin-top:30px;color:#aeb7ba;font-size:10px;letter-spacing:2px;font-weight:800}.hero-meta b{color:var(--gold);font-size:11px}.hero-meta i{width:24px;height:1px;background:rgba(255,255,255,.25)}.hero-side-copy{align-self:flex-end;margin:0 20px 90px 0;text-align:right;transform:rotate(-3deg)}.hero-side-copy .script,.script{font-family:"Brush Script MT","Segoe Script",cursive;font-style:italic;font-size:36px;line-height:.95;color:#fff}.hero-side-copy strong{display:block;color:var(--gold);font-size:43px;line-height:1;margin-top:8px;text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:10px}.scroll-cue{position:absolute;z-index:4;bottom:27px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:3px;color:#aeb5b7}.scroll-cue span{color:var(--gold);font-size:17px;margin-left:10px}.buttons{gap:12px}.btn{min-height:49px;padding:14px 25px;border-radius:4px;font-size:12px;letter-spacing:.2px}.btn-gold{background:var(--gold);color:#071014}.btn-outline{border:1px solid rgba(255,255,255,.55);background:rgba(0,0,0,.18)}
+.about-redesign{background:#fff;color:#0b1115;padding:0}.about-redesign-grid{display:grid;grid-template-columns:1fr 1fr;min-height:580px}.about-redesign-copy{padding:78px 70px 78px 0;display:flex;flex-direction:column;justify-content:center}.dark-kicker{color:#111!important}.section-kicker{font-size:10px;letter-spacing:2.5px}.section-kicker::before{background:var(--gold);width:27px;height:4px}.about-redesign-copy h2,.programs h2,.gallery-redesign h2{font-size:clamp(40px,5vw,66px);line-height:.98;letter-spacing:-2.5px;margin:0 0 23px;color:#081015}.about-redesign-copy h2 span,.programs h2 span,.gallery-redesign h2 span{color:var(--gold)}.about-redesign-copy p{font-size:14px;line-height:1.75;color:#4e5960;max-width:540px;margin-bottom:12px}.text-link{display:inline-flex;align-items:center;gap:10px;margin-top:22px;color:#0a1014;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px}.text-link span{color:#b58a00;font-size:18px}.about-redesign-image{position:relative;min-height:580px;overflow:hidden}.about-redesign-image img{width:100%;height:100%;object-fit:cover}.about-redesign-image::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.08),transparent 45%),linear-gradient(0deg,rgba(0,0,0,.5),transparent 50%)}.image-stamp{position:absolute;z-index:2;right:35px;top:35px;width:92px;height:92px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;text-align:center;transform:rotate(12deg);background:rgba(0,0,0,.35)}.image-stamp b{font-size:20px}.image-stamp span{font-size:7px;letter-spacing:1px}.image-caption{position:absolute;z-index:2;left:35px;bottom:35px;font-family:"Brush Script MT","Segoe Script",cursive;font-style:italic;font-size:32px;line-height:.95;color:#fff;transform:rotate(-4deg)}.image-caption strong{color:var(--gold)}
+.mission-band{background:#060b0e;padding:0;border-top:1px solid #1c2428;border-bottom:1px solid #1c2428}.mission-grid{display:grid;grid-template-columns:repeat(3,1fr)}.mission-card{min-height:210px;padding:38px 35px;display:flex;gap:20px;border-right:1px solid rgba(255,255,255,.14)}.mission-card:last-child{border-right:0}.mission-icon{color:var(--gold);font-size:36px;line-height:1}.mini-label{font-size:10px;color:var(--gold);font-weight:900;letter-spacing:2px;margin-bottom:7px}.mission-card h3{font-size:22px;margin-bottom:9px}.mission-card p{color:#9da8ad;font-size:12px;line-height:1.55;max-width:270px}.featured-mission{background:linear-gradient(135deg,rgba(255,210,26,.08),transparent)}
+.programs{background:#f5f5f2;color:#0b1115;padding:85px 0}.section-heading-row{display:flex;justify-content:space-between;align-items:end;gap:50px;margin-bottom:38px}.section-heading-row>p{max-width:430px;color:#667078;font-size:13px;line-height:1.65}.program-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.program-card{position:relative;background:#fff;border:1px solid #e0e2df;overflow:hidden;transition:.3s}.program-card:hover{transform:translateY(-7px);box-shadow:0 18px 45px rgba(0,0,0,.1)}.program-number{position:absolute;z-index:3;top:16px;left:16px;width:40px;height:40px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:#0a1013;font-size:10px;font-weight:900}.program-photo{height:245px;overflow:hidden}.program-photo img{width:100%;height:100%;object-fit:cover;transition:.5s}.program-card:hover img{transform:scale(1.05)}.program-body{padding:23px}.program-body h3{font-size:19px;margin-bottom:8px}.program-body p{font-size:12px;line-height:1.6;color:#6a7378;min-height:58px}.program-body a{display:inline-block;margin-top:13px;color:#10171b;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:1.4px}.program-body a:hover{color:#b08b00}
+.players-redesign{background:#05090b;padding:85px 0}.light-heading .section-kicker{color:#fff}.light-heading h2{font-size:clamp(40px,5vw,65px);line-height:.98;letter-spacing:-2px}.light-heading h2 span{color:var(--gold)}.heading-action{display:flex;align-items:end;gap:22px}.heading-action p{max-width:320px;color:#9aa5aa;font-size:12px;line-height:1.6}.player-grid-redesign{grid-template-columns:repeat(4,1fr);gap:14px}.player-grid-redesign .player-card{border-radius:0;background:#0b1115;border:1px solid #1e292e}.player-grid-redesign .player-image{height:340px;background:#0c1418}.player-grid-redesign .player-info{background:#0b1115;padding:16px 17px 20px}.player-grid-redesign .player-info span{font-size:8px;letter-spacing:1.8px;color:var(--gold);font-weight:900}.player-grid-redesign .player-info h3{font-size:15px;margin-top:8px}.player-grid-redesign .player-info p{margin-top:3px}.player-grid-redesign .player-arrow{width:34px;height:34px;right:15px;bottom:15px;background:var(--gold)}
+.gallery-redesign{background:#f5f5f2;color:#0b1115;padding:85px 0}.gallery-mosaic{display:grid;grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:250px 250px;gap:12px}.gallery-mosaic figure{position:relative;margin:0;overflow:hidden;background:#ddd}.gallery-mosaic figure img{width:100%;height:100%;object-fit:cover;transition:.5s}.gallery-mosaic figure:hover img{transform:scale(1.05)}.gallery-mosaic figure::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.7))}.gallery-mosaic figcaption{position:absolute;z-index:2;left:17px;bottom:15px;color:#fff;font-size:8px;letter-spacing:2px}.gallery-mosaic figcaption b{display:block;font-size:15px;letter-spacing:0;margin-top:4px}.gallery-tall{grid-row:1/3}.gallery-message{grid-column:3;grid-row:2;background:#060b0e;color:#fff;padding:30px;display:flex;flex-direction:column;justify-content:end}.gallery-message .script{font-size:31px;color:#fff;margin-bottom:15px}.gallery-message strong{font-size:25px;line-height:1.05}.gallery-message strong::first-line{color:#fff}
+.cta{padding:75px 0;background:linear-gradient(90deg,rgba(3,8,10,.95),rgba(3,8,10,.72)),url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=2200&q=85") center/cover}.cta h2{font-size:clamp(40px,5vw,62px)}.cta p{font-size:13px}.footer{background:#03080a;padding:50px 0 20px}.footer-main{grid-template-columns:1.4fr .8fr 1fr}.footer-bottom{border-top:0}.motto{color:var(--gold)}
+.site-page-inner,.all-players-inner,.player-profile-panel{border-radius:0;background:#f5f5f2;color:#0a1014}.site-page-head,.all-players-head{background:#05090b;color:#fff}.site-page-kicker,.all-players-kicker{color:var(--gold)}.site-page-title,.all-players-title{color:#fff}.site-page-body{color:#253038}.site-page-card{background:#fff;border:1px solid #ddd}.site-page-card-icon{color:var(--gold)}
+@media(max-width:900px){.nav-links{gap:18px}.hero-side-copy{display:none}.about-redesign-grid{grid-template-columns:1fr}.about-redesign-copy{padding:65px 0}.about-redesign-image{min-height:430px}.mission-grid{grid-template-columns:1fr}.mission-card{border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}.program-grid,.player-grid-redesign{grid-template-columns:repeat(2,1fr)}.section-heading-row,.heading-action{align-items:flex-start;flex-direction:column}.heading-action{gap:15px}.gallery-mosaic{grid-template-columns:1fr 1fr;grid-template-rows:220px 220px 220px}.gallery-tall{grid-row:auto}.gallery-message{grid-column:1/3;grid-row:auto}.gallery-redesign .section-heading-row{gap:20px}}
+@media(max-width:620px){.header{height:74px}.nav{min-height:74px}.logo img{width:53px;height:61px}.logo-text strong{font-size:20px}.logo-text span{font-size:7px}.nav-links{position:absolute;top:74px;left:0;right:0;background:#05090b;display:none;flex-direction:column;align-items:flex-start;padding:18px 24px;gap:0;border-top:1px solid #1b2529}.nav-links.open{display:flex}.nav-links a{padding:13px 0;width:100%}.nav-links a::after{bottom:5px;width:32px}.header-btn{display:none}.menu-btn{display:block}.hero{min-height:700px}.hero-inner{min-height:600px}.hero h1{font-size:55px;letter-spacing:-2.5px}.hero-lead{font-size:14px}.hero-meta{gap:10px;font-size:8px}.hero-meta i{width:13px}.program-grid,.player-grid-redesign{grid-template-columns:1fr}.gallery-mosaic{display:grid;grid-template-columns:1fr;grid-template-rows:250px 220px 220px 220px 230px}.gallery-tall{grid-row:auto}.gallery-message{grid-column:auto}.footer-main{grid-template-columns:1fr;gap:30px}.about-redesign-copy h2,.programs h2,.gallery-redesign h2,.light-heading h2{font-size:43px}}
+
+</style>
+<style id="bbw-internal-pages-fix">
+/* FINAL BBW BLUE THEME + READABILITY FIX FOR ABOUT/CONTACT INTERNAL PAGES */
+.site-page-modal{
+  background:rgba(2,16,42,.94)!important;
+  padding:12px!important;
+}
+.site-page-inner{
+  background:#fff!important;
+  color:#102033!important;
+  border:1px solid rgba(20,90,180,.25)!important;
+  border-radius:16px!important;
+}
+.site-page-head{
+  background:#061f49!important;
+  color:#fff!important;
+  border-bottom:3px solid #1261c9!important;
+  padding:18px 24px!important;
+}
+.site-page-kicker{
+  color:#69aafc!important;
+}
+.site-page-title{
+  color:#fff!important;
+}
+.site-page-title span{
+  color:#2f8cff!important;
+}
+.site-page-close{
+  background:rgba(255,255,255,.10)!important;
+  border-color:rgba(255,255,255,.25)!important;
+  color:#fff!important;
+}
+.site-page-body{
+  background:#fff!important;
+  color:#172433!important;
+  padding:34px!important;
+}
+.site-page-lead{
+  color:#46566a!important;
+  font-size:16px!important;
+  line-height:1.8!important;
+  font-weight:500!important;
+}
+.site-page-grid{
+  gap:18px!important;
+}
+.site-page-card{
+  background:#f7faff!important;
+  border:1px solid #d7e5f7!important;
+  border-radius:14px!important;
+  box-shadow:0 8px 24px rgba(10,62,125,.07)!important;
+}
+.site-page-card-icon{
+  background:#1261c9!important;
+  color:#fff!important;
+}
+.site-page-card h3{
+  color:#0a2342!important;
+}
+.site-page-card p{
+  color:#536477!important;
+  line-height:1.7!important;
+}
+.site-page-actions .btn-gold{
+  background:#1261c9!important;
+  color:#fff!important;
+  border-color:#1261c9!important;
+}
+.site-page-actions .btn-outline{
+  background:#fff!important;
+  color:#1261c9!important;
+  border:1px solid #1261c9!important;
+}
+.site-contact-list{
+  max-width:760px!important;
+}
+.site-contact-item{
+  background:#f7faff!important;
+  border:1px solid #d7e5f7!important;
+}
+.site-contact-item strong{
+  color:#0a2342!important;
+}
+.site-contact-item span,
+.site-contact-item a{
+  color:#536477!important;
+}
+.site-contact-icon{
+  color:#1261c9!important;
+}
+.site-page-gallery img{
+  border:1px solid #d7e5f7!important;
+}
+@media(max-width:560px){
+  .site-page-modal{padding:6px!important}
+  .site-page-head{padding:15px 16px!important}
+  .site-page-body{padding:22px 16px!important}
+  .site-page-lead{font-size:14px!important;line-height:1.75!important}
+  .site-page-title{font-size:32px!important}
+  .site-page-card{padding:20px!important}
+}
+</style>
+<style>
+/* =========================================================
+   FINAL BBW LANDING PAGE — BLUE + BLACK BRAND SYSTEM
+   High-contrast typography / mobile readability
+========================================================= */
+:root{
+  --navy:#05080d !important;
+  --navy-dark:#020408 !important;
+  --navy-light:#0b1624 !important;
+  --blue:#1261c9 !important;
+  --gold:#1261c9 !important;
+  --gold-dark:#0b4fae !important;
+  --white:#ffffff !important;
+  --light:#f4f7fb !important;
+  --text:#0b1420 !important;
+  --muted:#536477 !important;
+}
+
+/* GLOBAL READABILITY */
+body{
+  background:#05080d !important;
+  color:#fff !important;
+  overflow-x:hidden;
+}
+p, li, a, span, h1, h2, h3, h4, h5, h6{
+  text-rendering:optimizeLegibility;
+}
+p{
+  line-height:1.75;
+}
+a{
+  color:inherit;
+}
+::selection{
+  background:#1261c9;
+  color:#fff;
+}
+
+/* HEADER / NAVIGATION */
+.header{
+  background:#05080d !important;
+  border-bottom:1px solid rgba(18,97,201,.45) !important;
+}
+.logo-text strong,
+.nav-links a{
+  color:#fff !important;
+}
+.logo-text span{
+  color:#8ebcff !important;
+}
+.nav-links a::after{
+  background:#1261c9 !important;
+}
+.header-btn{
+  background:#1261c9 !important;
+  color:#fff !important;
+  border:1px solid #1261c9 !important;
+}
+.header-btn:hover{
+  background:#0b4fae !important;
+  box-shadow:0 10px 28px rgba(18,97,201,.35) !important;
+}
+.menu-btn{
+  color:#fff !important;
+  border-color:rgba(255,255,255,.3) !important;
+}
+
+/* LANDING HERO — BLACK WITH STRONG BLUE ACCENTS */
+.hero{
+  background:
+    linear-gradient(90deg,rgba(2,5,9,.98) 0%,rgba(3,10,20,.93) 38%,rgba(3,20,45,.70) 70%,rgba(4,34,75,.48) 100%),
+    url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=2200&q=90")
+    center/cover no-repeat !important;
+}
+.hero::after{
+  background:linear-gradient(transparent,#05080d) !important;
+}
+.hero-overlay{
+  background:
+    radial-gradient(circle at 72% 40%,rgba(18,97,201,.22),transparent 42%),
+    linear-gradient(90deg,rgba(0,0,0,.25),transparent 65%) !important;
+}
+.eyebrow{
+  color:#b9c7d8 !important;
+}
+.eyebrow span{
+  background:#1261c9 !important;
+}
+.hero h1{
+  color:#fff !important;
+}
+.hero h1 strong{
+  color:#4d98ff !important;
+}
+.hero-lead{
+  color:#edf4ff !important;
+  max-width:650px;
+  font-weight:500;
+}
+.hero-meta{
+  color:#c5d0dc !important;
+}
+.hero-meta b{
+  color:#5ba0ff !important;
+}
+.hero-meta i{
+  background:rgba(255,255,255,.35) !important;
+}
+.hero-side-copy .script,
+.script{
+  color:#fff !important;
+}
+.hero-side-copy strong{
+  color:#4d98ff !important;
+}
+.scroll-cue{
+  color:#d4dde8 !important;
+}
+.scroll-cue span{
+  color:#4d98ff !important;
+}
+
+/* BUTTONS */
+.btn{
+  font-weight:800 !important;
+}
+.btn-gold{
+  background:#1261c9 !important;
+  color:#fff !important;
+  border:1px solid #1261c9 !important;
+}
+.btn-gold:hover{
+  background:#0b4fae !important;
+  color:#fff !important;
+}
+.btn-outline{
+  color:#fff !important;
+  background:rgba(3,8,15,.5) !important;
+  border:1px solid rgba(255,255,255,.65) !important;
+}
+.btn-outline:hover{
+  background:#1261c9 !important;
+  border-color:#1261c9 !important;
+}
+
+/* ABOUT — WHITE/BLUE READABLE SECTION */
+.about-redesign{
+  background:#f7f9fc !important;
+  color:#0b1420 !important;
+  border-top:4px solid #1261c9;
+}
+.about-redesign-copy h2,
+.about-redesign-copy h2 span{
+  color:#0b1420 !important;
+}
+.about-redesign-copy h2 span{
+  color:#1261c9 !important;
+}
+.about-redesign-copy p{
+  color:#3f5064 !important;
+}
+.dark-kicker{
+  color:#1261c9 !important;
+  font-weight:900 !important;
+}
+.section-kicker{
+  color:#1261c9 !important;
+  font-weight:900 !important;
+}
+.section-kicker::before{
+  background:#1261c9 !important;
+}
+.text-link{
+  color:#0b1420 !important;
+}
+.text-link span{
+  color:#1261c9 !important;
+}
+.image-stamp{
+  border-color:#1261c9 !important;
+}
+.image-stamp b{
+  color:#fff !important;
+}
+.image-caption strong{
+  color:#4d98ff !important;
+}
+
+/* MISSION BAND — BLACK WITH BLUE */
+.mission-band{
+  background:#05080d !important;
+  border-top:1px solid #12345f !important;
+  border-bottom:1px solid #12345f !important;
+}
+.mission-card{
+  border-color:rgba(255,255,255,.12) !important;
+}
+.mission-icon,
+.mini-label{
+  color:#4d98ff !important;
+}
+.mission-card h3{
+  color:#fff !important;
+}
+.mission-card p{
+  color:#c2ccd7 !important;
+}
+.featured-mission{
+  background:linear-gradient(135deg,rgba(18,97,201,.22),transparent) !important;
+}
+
+/* PROGRAMS — LIGHT WITH BLACK TEXT + BLUE */
+.programs{
+  background:#eef3f9 !important;
+  color:#0b1420 !important;
+}
+.programs h2,
+.programs h2 span{
+  color:#0b1420 !important;
+}
+.programs h2 span{
+  color:#1261c9 !important;
+}
+.section-heading-row>p{
+  color:#4b5d72 !important;
+}
+.program-card{
+  background:#fff !important;
+  border:1px solid #d5dfeb !important;
+}
+.program-card:hover{
+  border-color:#1261c9 !important;
+  box-shadow:0 18px 45px rgba(18,97,201,.14) !important;
+}
+.program-number{
+  background:#1261c9 !important;
+  color:#fff !important;
+}
+.program-body h3{
+  color:#0b1420 !important;
+}
+.program-body p{
+  color:#526377 !important;
+}
+.program-body a{
+  color:#1261c9 !important;
+}
+
+/* PLAYERS — BLACK WITH BLUE DETAILS */
+.players-redesign{
+  background:#05080d !important;
+}
+.light-heading .section-kicker{
+  color:#5ba0ff !important;
+}
+.light-heading h2{
+  color:#fff !important;
+}
+.light-heading h2 span{
+  color:#4d98ff !important;
+}
+.heading-action p{
+  color:#c1ccd8 !important;
+}
+.player-grid-redesign .player-card{
+  background:#0b1119 !important;
+  border:1px solid #1b3555 !important;
+}
+.player-grid-redesign .player-card:hover{
+  border-color:#1261c9 !important;
+  box-shadow:0 18px 45px rgba(18,97,201,.18) !important;
+}
+.player-grid-redesign .player-image{
+  background:#09111d !important;
+}
+.player-grid-redesign .player-info{
+  background:#0b1119 !important;
+}
+.player-grid-redesign .player-info span{
+  color:#5ba0ff !important;
+}
+.player-grid-redesign .player-info h3{
+  color:#fff !important;
+}
+.player-grid-redesign .player-info p{
+  color:#bdc9d7 !important;
+}
+.player-grid-redesign .player-arrow{
+  background:#1261c9 !important;
+  color:#fff !important;
+}
+
+/* GALLERY — LIGHT WITH BLUE ACCENTS */
+.gallery-redesign{
+  background:#eef3f9 !important;
+  color:#0b1420 !important;
+}
+.gallery-redesign h2,
+.gallery-redesign h2 span{
+  color:#0b1420 !important;
+}
+.gallery-redesign h2 span{
+  color:#1261c9 !important;
+}
+.gallery-message{
+  background:#05080d !important;
+  color:#fff !important;
+  border-top:4px solid #1261c9;
+}
+.gallery-message .script{
+  color:#fff !important;
+}
+.gallery-message strong{
+  color:#fff !important;
+}
+
+/* CTA — BLACK + BLUE */
+.cta{
+  background:
+    linear-gradient(90deg,rgba(2,5,9,.97),rgba(3,18,40,.82)),
+    url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=2200&q=85")
+    center/cover !important;
+  border-top:1px solid #12345f;
+  border-bottom:1px solid #12345f;
+}
+.cta h2{
+  color:#fff !important;
+}
+.cta p{
+  color:#d5dfeb !important;
+}
+
+/* FOOTER — BLACK + BLUE */
+.footer{
+  background:#020408 !important;
+  color:#fff !important;
+  border-top:3px solid #1261c9;
+}
+.footer h3,
+.footer a,
+.footer p{
+  color:#fff !important;
+}
+.footer p{
+  color:#b8c5d3 !important;
+}
+.footer-links a:hover{
+  color:#4d98ff !important;
+}
+.motto{
+  color:#4d98ff !important;
+}
+.footer-bottom{
+  color:#9eacbb !important;
+  border-top:1px solid rgba(255,255,255,.12) !important;
+}
+
+/* ALL-PLAYERS / PROFILE MODALS */
+.site-page-inner,
+.all-players-inner,
+.player-profile-panel{
+  background:#f7f9fc !important;
+  color:#0b1420 !important;
+}
+.site-page-head,
+.all-players-head{
+  background:#05080d !important;
+  color:#fff !important;
+  border-bottom:3px solid #1261c9 !important;
+}
+.site-page-kicker,
+.all-players-kicker{
+  color:#5ba0ff !important;
+}
+.site-page-title,
+.all-players-title{
+  color:#fff !important;
+}
+.site-page-body{
+  background:#f7f9fc !important;
+  color:#26384d !important;
+}
+.site-page-body p,
+.site-page-body li{
+  color:#3f5064 !important;
+}
+.site-page-card{
+  background:#fff !important;
+  border:1px solid #d5dfeb !important;
+}
+.site-page-card h3{
+  color:#0b1420 !important;
+}
+.site-page-card p{
+  color:#526377 !important;
+}
+.site-page-card-icon{
+  background:#1261c9 !important;
+  color:#fff !important;
+}
+
+/* MOBILE: KEEP EVERYTHING READABLE */
+@media(max-width:900px){
+  .hero{
+    min-height:720px !important;
+  }
+  .hero-copy{
+    padding-top:10px !important;
+  }
+  .hero-lead{
+    max-width:100% !important;
+    font-size:15px !important;
+    line-height:1.75 !important;
+  }
+  .about-redesign-copy{
+    padding:55px 0 !important;
+  }
+  .section-heading-row>p{
+    max-width:100% !important;
+  }
+}
+@media(max-width:620px){
+  .header{
+    background:#05080d !important;
+  }
+  .nav-links{
+    background:#05080d !important;
+    border-top:1px solid #12345f !important;
+  }
+  .nav-links a{
+    color:#fff !important;
+  }
+  .hero{
+    min-height:700px !important;
+  }
+  .hero h1{
+    font-size:clamp(46px,14vw,64px) !important;
+    line-height:.95 !important;
+    letter-spacing:-2px !important;
+  }
+  .hero-lead{
+    font-size:14px !important;
+    color:#f1f6fc !important;
+  }
+  .buttons{
+    flex-wrap:wrap !important;
+  }
+  .btn{
+    min-height:48px !important;
+    padding:13px 19px !important;
+  }
+  .about-redesign-copy h2,
+  .programs h2,
+  .gallery-redesign h2,
+  .light-heading h2{
+    font-size:42px !important;
+    line-height:1 !important;
+  }
+  .mission-card p,
+  .program-body p,
+  .heading-action p,
+  .about-redesign-copy p,
+  .cta p,
+  .footer p{
+    font-size:13px !important;
+    line-height:1.75 !important;
+  }
+}
+</style>
+</head>
+<body>
+<!-- =======================================================
+     HEADER
+======================================================= -->
+<header class="header">
+<div class="container nav">
+<a class="logo" href="#home">
+<img alt="BBW Football Academy Logo" onerror="this.onerror=null;this.src='./Logo.png';" src="https://raw.githubusercontent.com/joshuadetoye23-beep/bbwfootballacademy/main/Logo.png"/>
+<div class="logo-text">
+<strong>BBW</strong>
+<span>FOOTBALL ACADEMY</span>
+</div>
+</a>
+<nav class="nav-links" id="navLinks">
+<a class="active" href="#home">
+Home
+</a>
+<a href="#about">
+About Us
+</a>
+<a href="#players">
+Our Players
+</a>
+<a href="#programs">
+Programs
+</a>
+<a href="#gallery">
+Gallery
+</a>
+<a href="#contact">
+Contact
+</a>
+</nav>
+<a class="header-btn" href="#scout">
+Join Us →
+</a>
+<button aria-label="Menu" class="menu-btn" id="menuBtn">
+☰
+</button>
+</div>
+</header>
+<!-- =======================================================
+     CINEMATIC HOME PAGE
+======================================================= -->
+<section class="hero" id="home">
+<div class="hero-overlay"></div>
+<div class="hero-lines"></div>
+<div class="container hero-inner">
+<div class="hero-copy">
+<div class="eyebrow"><span></span> BBW FOOTBALL ACADEMY</div>
+<h1>Building Players.<br/><strong>Shaping Futures.</strong></h1>
+<p class="hero-lead">We develop talented young footballers through quality training, discipline, professional guidance and real opportunities to grow.</p>
+<div class="buttons">
+<a class="btn btn-primary" href="#programs">Explore Programs <b>→</b></a>
+<a class="btn btn-outline" href="#players">Meet Our Players <b>→</b></a>
+</div>
+<div class="hero-meta">
+<span><b>01</b> TRAIN</span><i></i><span><b>02</b> DEVELOP</span><i></i><span><b>03</b> COMPETE</span>
+</div>
+</div>
+<div class="hero-side-copy">
+<span class="script">More Than<br/>Football…</span>
+<strong>A Future.</strong>
+</div>
+</div>
+<div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
+</section>
+<section class="about about-redesign" id="about">
+<div class="container about-redesign-grid">
+<div class="about-redesign-copy">
+<div class="section-kicker dark-kicker">ABOUT US</div>
+<h2>Building Players,<br/><span>Shaping Futures.</span></h2>
+<p>At BBW Football Academy, we believe football is more than a game. It is a journey of discipline, growth, character and opportunity.</p>
+<p>Our mission is to develop talented young players into confident, skilled and well-rounded individuals — on and off the pitch.</p>
+<a class="text-link" href="#vision">Discover Our Story <span>→</span></a>
+</div>
+<div class="about-redesign-image">
+<img alt="Young footballers training at BBW Football Academy" src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&amp;fit=crop&amp;w=1500&amp;q=90"/>
+<div class="image-stamp"><b>BBW</b><span>EST. 2022</span></div>
+<div class="image-caption">More than a game.<br/><strong>It's a journey.</strong></div>
+</div>
+</div>
+</section>
+<section class="mission-band" id="vision">
+<div class="container mission-grid">
+<div class="mission-card">
+<div class="mission-icon">◎</div>
+<div><div class="mini-label">OUR MISSION</div><h3>Developing Talent</h3><p>Quality training, discipline and professional guidance for the next generation.</p></div>
+</div>
+<div class="mission-card featured-mission">
+<div class="mission-icon">◉</div>
+<div><div class="mini-label">OUR VISION</div><h3>Creating Opportunities</h3><p>To become a recognized academy producing talented, disciplined and competitive players.</p></div>
+</div>
+<div class="mission-card">
+<div class="mission-icon">★</div>
+<div><div class="mini-label">OUR VALUES</div><h3>Discipline • Hard Work</h3><p>Respect, teamwork and excellence in everything we do.</p></div>
+</div>
+</div>
+</section>
+<section class="programs" id="programs">
+<div class="container">
+<div class="section-heading-row">
+<div>
+<div class="section-kicker dark-kicker">OUR PROGRAMS</div>
+<h2>Train. Develop.<br/><span>Compete.</span></h2>
+</div>
+<p>Structured football development designed to help young players improve their technical ability, tactical understanding, confidence and character.</p>
+</div>
+<div class="program-grid">
+<article class="program-card"><span class="program-number">01</span><div class="program-photo"><img alt="Football training" src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/></div><div class="program-body"><h3>Technical Development</h3><p>Ball mastery, passing, finishing, dribbling and individual technique.</p><a href="#scout">Join Program →</a></div></article>
+<article class="program-card"><span class="program-number">02</span><div class="program-photo"><img alt="Football match" src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/></div><div class="program-body"><h3>Tactical &amp; Match Play</h3><p>Game intelligence, positioning, teamwork and competitive match experience.</p><a href="#scout">Join Program →</a></div></article>
+<article class="program-card"><span class="program-number">03</span><div class="program-photo"><img alt="Football player development" src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/></div><div class="program-body"><h3>Exposure &amp; Opportunity</h3><p>Player visibility, showcases, tournaments and pathways toward higher levels.</p><a href="#scout">Join Program →</a></div></article>
+</div>
+</div>
+</section>
+<section class="players players-redesign" id="players">
+<div class="container">
+<div class="section-heading-row light-heading">
+<div>
+<div class="section-kicker">OUR PLAYERS</div>
+<h2>Future <span>Champions.</span></h2>
+</div>
+<div class="heading-action"><p>Meet the young talents developing their game, confidence and competitive edge at BBW.</p><a class="btn btn-primary" href="#allPlayers" id="viewAllPlayersBtn">View All Players →</a></div>
+</div>
+<div class="player-grid player-grid-redesign">
+<article class="player-card" data-age="16" data-experience="BBW Football Academy | 2025–Present" data-foot="Right" data-name="Michael Thomas" data-position="Midfielder / Winger" data-secondary="Winger" data-slug="michael-thomas" data-summary="A developing right-footed midfielder and winger with the ability to operate in attacking areas."><div class="player-image"><img alt="Michael Thomas" data-fallback="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&amp;fit=crop&amp;w=900&amp;q=85" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/michael-thomas/passport.jpg"/></div><div class="player-info"><span>01 · MIDFIELDER / WINGER</span><h3>Michael Thomas</h3><p>Age 16</p></div><div class="player-arrow">↗</div></article>
+<article class="player-card" data-age="23" data-dob="08/20/2003" data-foot="Right Foot" data-gender="Male" data-height="1.82 m" data-lga="Kaduna South" data-name="Sadam Haruna Musa" data-nationality="Nigerian" data-position="Central Defender" data-secondary="Striker" data-slug="sadam-haruna-musa" data-state="Kaduna" data-summary="Player profile details recorded from the official BBW Football Academy registration form."><div class="player-image"><img alt="Sadam Haruna Musa" data-fallback="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&amp;fit=crop&amp;w=900&amp;q=85" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="./Sadam.jpg"/></div><div class="player-info"><span>02 · CENTRAL DEFENDER</span><h3>Sadam Haruna Musa</h3><p>Age 23</p></div><div class="player-arrow">↗</div></article>
+<article class="player-card" data-age="17" data-dob="06/27/2009" data-foot="Right Foot" data-gender="Male" data-height="1.78 m" data-lga="Kaduna North" data-name="Abdullahi Lawal (abba)" data-nationality="Nigeria" data-position="Left Wing" data-secondary="RW/SF" data-slug="abdullahi-lawal-abba" data-state="Kaduna" data-summary="Player profile details recorded from the official BBW Football Academy registration form."><div class="player-image"><img alt="Abdullahi Lawal (abba)" data-fallback="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&amp;fit=crop&amp;w=900&amp;q=85" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/abdullahi-lawal-abba/passport.jpg"/></div><div class="player-info"><span>03 · LEFT WING</span><h3>Abdullahi Lawal (abba)</h3><p>Age 17</p></div><div class="player-arrow">↗</div></article>
+<article class="player-card" data-age="16" data-dob="06/15/2010" data-foot="Right" data-gender="Male" data-height="1.85 m" data-lga="Makarfi Local Government" data-name="Sadiq Yusuf Makarfi" data-nationality="Nigeria" data-position="Striker" data-secondary="Left Winger" data-slug="sadiq-yusuf-makarfi" data-state="Kaduna State" data-summary="Player profile details recorded from the official BBW Football Academy registration form."><div class="player-image"><img alt="Sadiq Yusuf Makarfi" data-fallback="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&amp;fit=crop&amp;w=900&amp;q=85" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/sadiq-yusuf-makarfi/passport.jpg"/></div><div class="player-info"><span>04 · STRIKER</span><h3>Sadiq Yusuf Makarfi</h3><p>Age 16</p></div><div class="player-arrow">↗</div></article>
+</div>
+</div>
+</section>
+<section class="gallery gallery-redesign" id="gallery">
+<div class="container">
+<div class="section-heading-row">
+<div><div class="section-kicker dark-kicker">OUR GALLERY</div><h2>Moments That<br/><span>Tell Our Story.</span></h2></div>
+<p>From intense training sessions to competitive matches, our gallery captures the hard work, discipline and progress of our players.</p>
+</div>
+<div class="gallery-mosaic">
+<figure class="gallery-tall"><img alt="BBW training session" src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&amp;fit=crop&amp;w=1000&amp;q=90"/><figcaption>TRAINING <b>Intense Sessions</b></figcaption></figure>
+<figure><img alt="Football match" src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&amp;fit=crop&amp;w=900&amp;q=90"/><figcaption>MATCHES <b>In Action</b></figcaption></figure>
+<figure><img alt="Football player" src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&amp;fit=crop&amp;w=900&amp;q=90"/><figcaption>PLAYERS <b>Future Champions</b></figcaption></figure>
+<figure><img alt="Football training" src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&amp;fit=crop&amp;w=900&amp;q=90"/><figcaption>DEVELOPMENT <b>Skills &amp; Drills</b></figcaption></figure>
+<div class="gallery-message"><span class="script">Train.<br/>Develop.<br/>Compete.</span><strong>See More.<br/>Get Inspired.</strong></div>
+</div>
+</div>
+</section>
+<!-- =======================================================
+     INTERNAL NAVIGATION PAGES
+======================================================= -->
+<div aria-hidden="true" class="site-page-modal" id="sitePageModal">
+<div class="site-page-inner">
+<header class="site-page-head">
+<div>
+<div class="site-page-kicker" id="sitePageKicker">BBW Football Academy</div>
+<h2 class="site-page-title" id="sitePageTitle">About <span>BBW</span></h2>
+</div>
+<button aria-label="Close page" class="site-page-close" id="sitePageClose">×</button>
+</header>
+<div class="site-page-body" id="sitePageBody"></div>
+</div>
+</div>
+<!-- =======================================================
+     ALL 18 PLAYERS DIRECTORY
+======================================================= -->
+<div aria-hidden="true" class="all-players-modal" id="allPlayers">
+<div class="all-players-inner">
+<div class="all-players-head">
+<div>
+<div class="all-players-kicker">BBW Football Academy</div>
+<h2 class="all-players-title">Our <span style="color:var(--brand-blue);">18 Players</span></h2>
+<p class="all-players-subtitle">Explore the BBW academy squad. Select a player to view the information provided in their official academy registration profile.</p>
+</div>
+<button aria-label="Close all players" class="all-players-close" id="allPlayersClose">×</button>
+</div>
+<div class="all-players-grid"><article class="squad-card player-card" data-age="16" data-experience="BBW Football Academy | 2025–Present" data-foot="Right" data-name="Michael Thomas" data-position="Midfielder / Winger" data-secondary="Winger" data-slug="michael-thomas" data-summary="A developing right-footed midfielder and winger with the ability to operate in attacking areas.">
+<div class="squad-number">01</div>
+<img alt="Michael Thomas" data-fallback="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/michael-thomas/passport.jpg"/>
+<div class="squad-info"><strong>Michael Thomas</strong><span>Midfielder / Winger | Age 16</span></div>
+</article><article class="squad-card player-card" data-age="23" data-dob="08/20/2003" data-foot="Right Foot" data-gender="Male" data-height="1.82 m" data-lga="Kaduna South" data-name="Sadam Haruna Musa" data-nationality="Nigerian" data-position="Central Defender" data-secondary="Striker" data-slug="sadam-haruna-musa" data-state="Kaduna" data-summary="Player profile details recorded from the official BBW Football Academy registration form.">
+<div class="squad-number">02</div>
+<img alt="Sadam Haruna Musa" data-fallback="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="./Sadam.jpg"/>
+<div class="squad-info"><strong>Sadam Haruna Musa</strong><span>Central Defender | Age 23</span></div>
+</article><article class="squad-card player-card" data-age="17" data-dob="06/27/2009" data-foot="Right Foot" data-gender="Male" data-height="1.78 m" data-lga="Kaduna North" data-name="Abdullahi Lawal (abba)" data-nationality="Nigeria" data-position="Left Wing" data-secondary="RW/SF" data-slug="abdullahi-lawal-abba" data-state="Kaduna" data-summary="Player profile details recorded from the official BBW Football Academy registration form.">
+<div class="squad-number">03</div>
+<img alt="Abdullahi Lawal (abba)" data-fallback="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/abdullahi-lawal-abba/passport.jpg"/>
+<div class="squad-info"><strong>Abdullahi Lawal (abba)</strong><span>Left Wing | Age 17</span></div>
+</article><article class="squad-card player-card" data-age="16" data-dob="06/15/2010" data-foot="Right" data-gender="Male" data-height="1.85 m" data-lga="Makarfi Local Government" data-name="Sadiq Yusuf Makarfi" data-nationality="Nigeria" data-position="Striker" data-secondary="Left Winger" data-slug="sadiq-yusuf-makarfi" data-state="Kaduna State" data-summary="Player profile details recorded from the official BBW Football Academy registration form.">
+<div class="squad-number">04</div>
+<img alt="Sadiq Yusuf Makarfi" data-fallback="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/sadiq-yusuf-makarfi/passport.jpg"/>
+<div class="squad-info"><strong>Sadiq Yusuf Makarfi</strong><span>Striker | Age 16</span></div>
+</article><article class="squad-card player-card" data-age="20" data-dob="05/01/2006" data-foot="Right leg" data-gender="Male" data-lga="Chanchaga" data-name="Ibrahim Abdulhakeem" data-nationality="Nigeria" data-position="Goalkeeping" data-secondary="Goalkeeping" data-slug="ibrahim-abdulhakeem" data-state="Niger State" data-summary="Player profile details recorded from the official BBW Football Academy registration form.">
+<div class="squad-number">05</div>
+<img alt="Ibrahim Abdulhakeem" data-fallback="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/ibrahim-abdulhakeem/passport.jpg"/>
+<div class="squad-info"><strong>Ibrahim Abdulhakeem</strong><span>Goalkeeping | Age 20</span></div>
+</article>
+<article class="squad-card player-card" data-age="17" data-name="Abdulkareem Sani" data-position="Forward" data-slug="abdulkareem-sani">
+<div class="squad-number">06</div>
+<img alt="Abdulkareem Sani" data-fallback="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/abdulkareem-sani/passport.jpg"/>
+<div class="squad-info"><strong>Abdulkareem Sani</strong><span>Forward | Age 17</span></div>
+</article>
+<article class="squad-card player-card" data-age="16" data-name="Musa Ibrahim" data-position="Midfielder" data-slug="musa-ibrahim">
+<div class="squad-number">07</div>
+<img alt="Musa Ibrahim" data-fallback="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/musa-ibrahim/passport.jpg"/>
+<div class="squad-info"><strong>Musa Ibrahim</strong><span>Midfielder | Age 16</span></div>
+</article>
+<article class="squad-card player-card" data-age="17" data-name="Daniel John" data-position="Defender" data-slug="daniel-john">
+<div class="squad-number">08</div>
+<img alt="Daniel John" data-fallback="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/daniel-john/passport.jpg"/>
+<div class="squad-info"><strong>Daniel John</strong><span>Defender | Age 17</span></div>
+</article>
+<article class="squad-card player-card" data-age="16" data-name="Yusuf Abdullahi" data-position="Goalkeeper" data-slug="yusuf-abdullahi">
+<div class="squad-number">09</div>
+<img alt="Yusuf Abdullahi" data-fallback="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/yusuf-abdullahi/passport.jpg"/>
+<div class="squad-info"><strong>Yusuf Abdullahi</strong><span>Goalkeeper | Age 16</span></div>
+</article>
+<article class="squad-card player-card" data-age="17" data-name="Samuel Peter" data-position="Winger" data-slug="samuel-peter">
+<div class="squad-number">10</div>
+<img alt="Samuel Peter" data-fallback="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/samuel-peter/passport.jpg"/>
+<div class="squad-info"><strong>Samuel Peter</strong><span>Winger | Age 17</span></div>
+</article>
+<article class="squad-card player-card" data-age="16" data-name="Aminu Bello" data-position="Striker" data-slug="aminu-bello">
+<div class="squad-number">11</div>
+<img alt="Aminu Bello" data-fallback="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/aminu-bello/passport.jpg"/>
+<div class="squad-info"><strong>Aminu Bello</strong><span>Striker | Age 16</span></div>
+</article>
+<article class="squad-card player-card" data-age="17" data-name="David Emmanuel" data-position="Midfielder" data-slug="david-emmanuel">
+<div class="squad-number">12</div>
+<img alt="David Emmanuel" data-fallback="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/david-emmanuel/passport.jpg"/>
+<div class="squad-info"><strong>David Emmanuel</strong><span>Midfielder | Age 17</span></div>
+</article>
+<article class="squad-card player-card" data-age="16" data-name="Ishaq Mohammed" data-position="Defender" data-slug="ishaq-mohammed">
+<div class="squad-number">13</div>
+<img alt="Ishaq Mohammed" data-fallback="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/ishaq-mohammed/passport.jpg"/>
+<div class="squad-info"><strong>Ishaq Mohammed</strong><span>Defender | Age 16</span></div>
+</article>
+<article class="squad-card player-card" data-age="17" data-name="Caleb Joseph" data-position="Winger" data-slug="caleb-joseph">
+<div class="squad-number">14</div>
+<img alt="Caleb Joseph" data-fallback="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/caleb-joseph/passport.jpg"/>
+<div class="squad-info"><strong>Caleb Joseph</strong><span>Winger | Age 17</span></div>
+</article>
+<article class="squad-card player-card" data-age="16" data-name="Sani Umar" data-position="Midfielder" data-slug="sani-umar">
+<div class="squad-number">15</div>
+<img alt="Sani Umar" data-fallback="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/sani-umar/passport.jpg"/>
+<div class="squad-info"><strong>Sani Umar</strong><span>Midfielder | Age 16</span></div>
+</article>
+<article class="squad-card player-card" data-age="17" data-name="Benjamin Paul" data-position="Striker" data-slug="benjamin-paul">
+<div class="squad-number">16</div>
+<img alt="Benjamin Paul" data-fallback="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/benjamin-paul/passport.jpg"/>
+<div class="squad-info"><strong>Benjamin Paul</strong><span>Striker | Age 17</span></div>
+</article>
+<article class="squad-card player-card" data-age="16" data-name="Abubakar Musa" data-position="Defender" data-slug="abubakar-musa">
+<div class="squad-number">17</div>
+<img alt="Abubakar Musa" data-fallback="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/abubakar-musa/passport.jpg"/>
+<div class="squad-info"><strong>Abubakar Musa</strong><span>Defender | Age 16</span></div>
+</article>
+<article class="squad-card player-card" data-age="17" data-name="Emmanuel David" data-position="Goalkeeper" data-slug="emmanuel-david">
+<div class="squad-number">18</div>
+<img alt="Emmanuel David" data-fallback="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&amp;fit=crop&amp;w=700&amp;q=85" loading="lazy" onerror="if(this.dataset.fallback){this.onerror=null;this.src=this.dataset.fallback;}" src="players/emmanuel-david/passport.jpg"/>
+<div class="squad-info"><strong>Emmanuel David</strong><span>Goalkeeper | Age 17</span></div>
+</article>
+</div>
+</div>
+</div>
+<!-- =======================================================
+     DIGITAL PLAYER PROFILE MODAL
+======================================================= -->
+<div aria-hidden="true" class="player-profile-modal" id="playerProfileModal">
+<div aria-labelledby="profileName" aria-modal="true" class="player-profile-panel" role="dialog">
+<button aria-label="Close player profile" class="profile-close" id="profileClose">×</button>
+<div class="profile-top">
+<div class="profile-brand">
+<img alt="BBW Football Academy Logo" onerror="this.onerror=null;this.src='./Logo.png';" src="https://raw.githubusercontent.com/joshuadetoye23-beep/bbwfootballacademy/main/Logo.png"/>
+<div><strong>BBW</strong><span>FOOTBALL ACADEMY</span></div>
+</div>
+<div class="profile-kicker">Digital Player Passport</div>
+</div>
+<div class="profile-hero">
+<div class="profile-photo"><img alt="Player photo" id="profilePhoto" src=""/></div>
+<div class="profile-main">
+<div class="profile-kicker" style="color:#68758a;">Official Academy Profile</div>
+<h2 class="profile-name" id="profileName"></h2>
+<div class="profile-position" id="profilePosition"></div>
+<div class="profile-grid">
+<div class="profile-field"><span>Age</span><strong id="profileAge"></strong></div>
+<div class="profile-field"><span>Preferred Foot</span><strong id="profileFoot"></strong></div>
+<div class="profile-field"><span>Primary Position</span><strong id="profilePositionField"></strong></div>
+<div class="profile-field"><span>Academy</span><strong>BBW Football Academy</strong></div>
+<div class="profile-field"><span>Club Experience</span><strong id="profileExperience"></strong></div>
+<div class="profile-field"><span>Status</span><strong>Academy Player</strong></div>
+<div class="profile-field"><span>Date of Birth</span><strong id="profileDob"></strong></div><div class="profile-field"><span>Secondary Position</span><strong id="profileSecondary"></strong></div><div class="profile-field"><span>Height</span><strong id="profileHeight"></strong></div><div class="profile-field"><span>Nationality</span><strong id="profileNationality"></strong></div><div class="profile-field"><span>State of Origin</span><strong id="profileState"></strong></div><div class="profile-field"><span>LGA</span><strong id="profileLga"></strong></div></div>
+<div class="profile-actions">
+<a class="profile-action-btn primary" href="" id="viewCvBtn" rel="noopener" target="_blank">📄 View CV</a>
+<a class="profile-action-btn secondary" download="" href="" id="downloadCvBtn">⬇ Download CV</a>
+</div>
+</div>
+</div>
+<section class="profile-section">
+<h3>Player Profile</h3>
+<p id="profileSummary"></p>
+</section>
+<section class="profile-section">
+<h3>Football Experience &amp; Achievements</h3>
+<p id="profileAchievements"></p>
+</section>
+<section class="profile-section" id="cvSection">
+<h3>Player CV</h3>
+<div class="profile-cv-wrap">
+<div class="profile-cv-viewer"><iframe id="cvViewer" title="Player CV"></iframe></div>
+<div class="profile-empty" id="cvNotice">The player's CV will appear here when the PDF is uploaded to the player's folder. The View CV and Download CV buttons above will then work automatically.</div>
+</div>
+</section>
+<section class="profile-section">
+<h3>Action Photos &amp; Match Gallery</h3>
+<p style="margin-bottom:15px;">Up to 50 action photos can be displayed for this player. Add the images to the player's action-photos folder and they will appear automatically.</p>
+<div class="profile-media-grid" id="profileGallery"></div>
+</section>
+<section class="profile-section dark">
+<h3>Player Videos &amp; Highlights</h3>
+<div class="profile-video-grid" id="profileVideos"></div>
+</section>
+<div class="profile-footer"><span>DREAM · TRAIN · ACHIEVE</span><span>BBW FOOTBALL ACADEMY · PLAYER DEVELOPMENT</span></div>
+</div>
+</div>
+<!-- =======================================================
+     CTA
+======================================================= -->
+<section class="cta" id="scout">
+<div class="container cta-grid">
+<div>
+<div class="section-kicker">
+Your Next Opportunity
+</div>
+<h2>
+
+Get Scouted.
+
+<span class="gold">
+Be Seen.
+Go Further.
+</span>
+</h2>
+<p>
+
+Join BBW Football Academy today and take the first
+step towards your football future.
+
+</p>
+</div>
+<a class="btn btn-primary" href="#" onclick="openWhatsApp(); return false;">
+Get Scouted Now →
+</a>
+</div>
+</section>
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+<footer class="footer" id="contact">
+<div class="container">
+<div class="footer-main">
+<div class="footer-about">
+<a class="footer-logo" href="#home">
+<img alt="BBW Football Academy Logo" onerror="this.onerror=null;this.src='./Logo.png';" src="https://raw.githubusercontent.com/joshuadetoye23-beep/bbwfootballacademy/main/Logo.png"/>
+<div>
+<strong>
+BBW
+</strong>
+<span>
+FOOTBALL ACADEMY
+</span>
+</div>
+</a>
+<p>
+
+Developing talented footballers through discovery,
+development, exposure and professional opportunities.
+
+</p>
+</div>
+<div>
+<h4>
+Quick Links
+</h4>
+<div class="footer-links">
+<a href="#home">
+Home
+</a>
+<a href="#about">
+About Us
+</a>
+<a href="#players">
+Our Players
+</a>
+<a href="#programs">
+Programs
+</a>
+<a href="#gallery">
+Gallery
+</a>
+<a href="#contact">
+Contact
+</a>
+</div>
+</div>
+<div>
+<h4>
+Contact Us
+</h4>
+<div class="contact-item">
+<span>
+☎
+</span>
+<a href="tel:+2348080976262">
++234 808 097 6262
+</a>
+</div>
+<div class="contact-item">
+<span>
+✉
+</span>
+<span>
+bbwfootballacademy@gmail.com
+</span>
+</div>
+<div class="contact-item">
+<span>
+📍
+</span>
+<span>
+Kaduna, Nigeria · Murtala Square
+</span>
+</div>
+<div class="socials">
+<a aria-label="Facebook" href="https://www.facebook.com/share/1CX3MBGke5/" target="_blank" rel="noopener noreferrer">
+f
+</a>
+<a aria-label="TikTok" href="https://www.tiktok.com/@bbw_football_acadamy?_r=1&_t=ZS-99vnB6APiGj" target="_blank" rel="noopener noreferrer">
+♪
+</a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="motto">
+DREAM · TRAIN · ACHIEVE
+</div>
+<div>
+© 2026 BBW Football Academy. All rights reserved.
+</div>
+</div>
+</div>
+</footer>
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+<script>
+
+/* ============================
+   MOBILE MENU
+============================ */
+
+const menuBtn =
+    document.getElementById("menuBtn");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+menuBtn.addEventListener("click", function(){
+
+    navLinks.classList.toggle("open");
+
+    if(navLinks.classList.contains("open")){
+
+        menuBtn.textContent = "×";
+
+    } else {
+
+        menuBtn.textContent = "☰";
+
+    }
+
+});
+
+
+/* Close mobile menu */
+
+document.querySelectorAll(
+    ".nav-links a"
+).forEach(function(link){
+
+    link.addEventListener(
+        "click",
+        function(){
+
+            navLinks.classList.remove("open");
+
+            menuBtn.textContent = "☰";
+
+        }
+    );
+
+});
+
+
+/* ============================
+   INTERNAL NAVIGATION PAGES
+============================ */
+const sitePageModal = document.getElementById("sitePageModal");
+const sitePageClose = document.getElementById("sitePageClose");
+const sitePageTitle = document.getElementById("sitePageTitle");
+const sitePageKicker = document.getElementById("sitePageKicker");
+const sitePageBody = document.getElementById("sitePageBody");
+
+const sitePages = {
+    about: {
+        kicker: "About BBW",
+        title: 'More Than Just <span>Football</span>',
+        html: `
+            <p class="site-page-lead">BBW Football Academy is a home for ambitious and talented players. We focus on discovering, developing and showcasing young footballers who have the potential to make an impact at the highest level.</p>
+            <div class="site-page-grid">
+                <div class="site-page-card"><div class="site-page-card-icon">⚽</div><h3>Talent Identification</h3><p>We help identify promising football talent and create a platform where players can be seen.</p></div>
+                <div class="site-page-card"><div class="site-page-card-icon">↗</div><h3>Player Development</h3><p>Players are given a pathway focused on football growth, discipline and long-term improvement.</p></div>
+                <div class="site-page-card"><div class="site-page-card-icon">◎</div><h3>Exposure & Scouting</h3><p>Player profiles, football media and scouting visibility help talented players showcase their ability.</p></div>
+                <div class="site-page-card"><div class="site-page-card-icon">★</div><h3>Professional Network</h3><p>BBW is designed to connect talented players with wider football opportunities and networks.</p></div>
+            </div>
+            <div class="site-page-actions"><a href="#players" class="btn btn-gold">Meet Our Players →</a><a href="#scout" class="btn btn-outline">Get Scouted →</a></div>
+        `
+    },
+    vision: {
+        kicker: "Why Choose BBW",
+        title: 'The Right Platform for Your <span>Talent</span>',
+        html: `
+            <p class="site-page-lead">At BBW, we provide the right environment, network and exposure to help talented players reach their full potential. Our approach is built around development, visibility, professional exposure and long-term opportunities.</p>
+            <div class="site-page-grid">
+                <div class="site-page-card"><div class="site-page-card-icon">⚽</div><h3>Focused Development</h3><p>Structured pathways for football growth and continuous improvement.</p></div>
+                <div class="site-page-card"><div class="site-page-card-icon">◉</div><h3>Scout Visibility</h3><p>Present player information in a professional format for clubs and scouts.</p></div>
+                <div class="site-page-card"><div class="site-page-card-icon">◇</div><h3>Professional Exposure</h3><p>Showcase player ability and football content on bigger stages.</p></div>
+                <div class="site-page-card"><div class="site-page-card-icon">🏅</div><h3>Discipline & Character</h3><p>Build stronger mindsets and professional habits alongside football development.</p></div>
+                <div class="site-page-card"><div class="site-page-card-icon">⌁</div><h3>Long-Term Opportunities</h3><p>Create pathways toward future professional football opportunities.</p></div>
+                <div class="site-page-card"><div class="site-page-card-icon">🤝</div><h3>Global Connections</h3><p>Increase access to wider football networks and potential opportunities.</p></div>
+            </div>
+        `
+    },
+    gallery: {
+        kicker: "BBW Football Academy",
+        title: 'Football <span>Gallery</span>',
+        html: `
+            <p class="site-page-lead">Explore football moments from the BBW platform. As the academy grows, this page can be expanded with training sessions, matches, player action photos, events and academy activities.</p>
+            <div class="site-page-gallery">
+                <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=900&q=85" alt="Football training">
+                <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=85" alt="Football match">
+                <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=900&q=85" alt="Football player">
+            </div>
+        `
+    },
+    contact: {
+        kicker: "Get In Touch",
+        title: 'Contact <span>BBW</span>',
+        html: `
+            <p class="site-page-lead">For scouting enquiries, player registration, academy information or other football opportunities, contact BBW Football Academy through the details below.</p>
+            <div class="site-contact-list">
+                <div class="site-contact-item"><div class="site-contact-icon">☎</div><div><strong>Phone</strong><a href="tel:+2348080976262">+234 808 097 6262</a></div></div>
+                <div class="site-contact-item"><div class="site-contact-icon">✉</div><div><strong>Email</strong><span>info@bbwfootballacademy.com</span></div></div>
+                <div class="site-contact-item"><div class="site-contact-icon">📍</div><div><strong>Location</strong><span>Murtala Square, Kaduna, Nigeria</span></div></div>
+            </div>
+            <div class="site-page-actions"><a href="#scout" class="btn btn-gold">Get Scouted →</a><a href="https://wa.me/2348080976262?text=Hello%20BBW%20Football%20Academy.%20I%20would%20like%20more%20information." target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Us →</a></div>
+        `
+    }
+};
+
+function openSitePage(pageKey){
+    const page = sitePages[pageKey];
+    if(!page) return;
+    sitePageKicker.textContent = page.kicker;
+    sitePageTitle.innerHTML = page.title;
+    sitePageBody.innerHTML = page.html;
+    sitePageModal.classList.add("open");
+    sitePageModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    sitePageBody.querySelectorAll('a[href="#players"]').forEach(function(link){
+        link.addEventListener("click", function(event){
+            event.preventDefault();
+            closeSitePage();
+            openAllPlayers();
+        });
+    });
+    sitePageBody.querySelectorAll('a[href="#scout"]').forEach(function(link){
+        link.addEventListener("click", function(){ closeSitePage(); });
+    });
+}
+
+function closeSitePage(){
+    sitePageModal.classList.remove("open");
+    sitePageModal.setAttribute("aria-hidden", "true");
+    sitePageBody.innerHTML = "";
+    document.body.style.overflow = "";
+}
+
+sitePageClose.addEventListener("click", closeSitePage);
+sitePageModal.addEventListener("click", function(event){
+    if(event.target === sitePageModal){ closeSitePage(); }
+});
+
+/* Make the main navigation behave like real site pages. */
+document.querySelectorAll(".nav-links a").forEach(function(link){
+    link.addEventListener("click", function(event){
+        const target = link.getAttribute("href");
+        if(target === "#home"){
+            closeSitePage();
+            closeAllPlayers();
+            window.scrollTo({top: 0, behavior: "smooth"});
+            return;
+        }
+        if(target === "#players"){
+            event.preventDefault();
+            closeSitePage();
+            openAllPlayers();
+            return;
+        }
+        if(target === "#about" || target === "#vision" || target === "#gallery" || target === "#contact"){
+            event.preventDefault();
+            closeAllPlayers();
+            openSitePage(target.substring(1));
+        }
+    });
+});
+
+
+/* ============================
+   WHATSAPP SCOUTING BUTTON
+============================ */
+
+function openWhatsApp(){
+
+    const phone =
+        "2348080976262";
+
+    const message =
+        "Hello BBW Football Academy. I am interested in getting scouted / joining the academy. Please send me more information.";
+
+    const whatsappURL =
+        "https://wa.me/" +
+        phone +
+        "?text=" +
+        encodeURIComponent(message);
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+
+/* ============================
+   ACTIVE NAVIGATION
+============================ */
+
+const sections =
+    document.querySelectorAll(
+        "section[id]"
+    );
+
+const navItems =
+    document.querySelectorAll(
+        ".nav-links a"
+    );
+
+
+const observer =
+    new IntersectionObserver(
+        function(entries){
+
+            entries.forEach(
+                function(entry){
+
+                    if(entry.isIntersecting){
+
+                        navItems.forEach(
+                            function(item){
+
+                                item.classList.remove(
+                                    "active"
+                                );
+
+                            }
+                        );
+
+
+                        const active =
+                            document.querySelector(
+                                '.nav-links a[href="#' +
+                                entry.target.id +
+                                '"]'
+                            );
+
+
+                        if(active){
+
+                            active.classList.add(
+                                "active"
+                            );
+
+                        }
+
+                    }
+
+                }
+            );
+
+        },
+        {
+            rootMargin:
+                "-40% 0px -50% 0px"
+        }
+    );
+
+
+sections.forEach(
+    function(section){
+
+        observer.observe(section);
+
+    }
+);
+
+
+/* ============================
+   PLAYER PROFILE / PASSPORT
+============================ */
+/* Player passport images are loaded from players/{player-slug}/passport.jpg.
+   Example: Sadam.jpg */
+const allPlayersModal = document.getElementById("allPlayers");
+const viewAllPlayersBtn = document.getElementById("viewAllPlayersBtn");
+const allPlayersClose = document.getElementById("allPlayersClose");
+
+function openAllPlayers(){
+    allPlayersModal.classList.add("open");
+    allPlayersModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+}
+
+function closeAllPlayers(){
+    allPlayersModal.classList.remove("open");
+    allPlayersModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
+viewAllPlayersBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    openAllPlayers();
+});
+
+allPlayersClose.addEventListener("click", closeAllPlayers);
+
+allPlayersModal.addEventListener("click", function(event){
+    if(event.target === allPlayersModal){
+        closeAllPlayers();
+    }
+});
+
+const playerProfileModal = document.getElementById("playerProfileModal");
+const profileClose = document.getElementById("profileClose");
+const profilePhoto = document.getElementById("profilePhoto");
+const profileName = document.getElementById("profileName");
+const profilePosition = document.getElementById("profilePosition");
+const profileAge = document.getElementById("profileAge");
+const profileFoot = document.getElementById("profileFoot");
+const profilePositionField = document.getElementById("profilePositionField");
+const profileExperience = document.getElementById("profileExperience");
+const profileSummary = document.getElementById("profileSummary");
+const profileAchievements = document.getElementById("profileAchievements");
+const viewCvBtn = document.getElementById("viewCvBtn");
+const downloadCvBtn = document.getElementById("downloadCvBtn");
+const cvViewer = document.getElementById("cvViewer");
+const cvNotice = document.getElementById("cvNotice");
+const profileGallery = document.getElementById("profileGallery");
+const profileVideos = document.getElementById("profileVideos");
+let returnToAllPlayers = false;
+
+function slugifyPlayer(name){
+    return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
+function playerDataFromCard(card){
+    const name = card.dataset.name || card.querySelector("h3")?.textContent || card.querySelector(".squad-info strong")?.textContent || "Player";
+    const position = card.dataset.position || "Football Player";
+    const age = card.dataset.age || "Not available";
+    const slug = card.dataset.slug || slugifyPlayer(name);
+    const imageElement = card.querySelector(".player-image img") || card.querySelector("img");
+    const image = (name.toLowerCase() === "sadam haruna musa")
+        ? "./Sadam.jpg"
+        : (imageElement ? imageElement.src : `players/${slug}/passport.jpg`);
+
+    return {
+        name,
+        position,
+        age,
+        image,
+        slug,
+        foot: card.dataset.foot || "Not provided",
+        experience: card.dataset.experience || "Not provided",
+        summary: card.dataset.summary || "Player profile information has been recorded from the academy registration form.",
+        achievements: card.dataset.achievements || "No achievements provided in the registration information.",
+        dob: card.dataset.dob || "Not provided",
+        gender: card.dataset.gender || "Not provided",
+        nationality: card.dataset.nationality || "Not provided",
+        state: card.dataset.state || "Not provided",
+        lga: card.dataset.lga || "Not provided",
+        secondary: card.dataset.secondary || "Not provided",
+        height: card.dataset.height || "Not provided",
+        cv: card.dataset.cv || `players/${slug}/cv.pdf`,
+        photos: [
+            card.dataset.photo1 || image,
+            card.dataset.photo2 || image,
+            card.dataset.photo3 || image,
+            card.dataset.photo4 || image
+        ],
+        videos: [
+            card.dataset.video1 || `players/${slug}/interview.mp4`,
+            card.dataset.video2 || `players/${slug}/training.mp4`,
+            card.dataset.video3 || `players/${slug}/match-highlights.mp4`,
+            card.dataset.video4 || `players/${slug}/additional-highlights.mp4`
+        ]
+    };
+}
+
+function openPlayerProfile(card){
+    // Remember where the player profile was opened from.
+    // If it came from the full 18-player directory, closing the profile
+    // should return the user to that same directory instead of the homepage.
+    returnToAllPlayers = allPlayersModal.classList.contains("open");
+    closeAllPlayers();
+    const player = playerDataFromCard(card);
+
+    profileName.textContent = player.name;
+    profilePosition.textContent = player.position;
+    profileAge.textContent = player.age;
+    profileFoot.textContent = player.foot;
+    profilePositionField.textContent = player.position;
+    profileExperience.textContent = player.experience;
+    document.getElementById("profileDob").textContent = player.dob;
+    document.getElementById("profileSecondary").textContent = player.secondary;
+    document.getElementById("profileHeight").textContent = player.height;
+    document.getElementById("profileNationality").textContent = player.nationality;
+    document.getElementById("profileState").textContent = player.state;
+    document.getElementById("profileLga").textContent = player.lga;
+    profileSummary.textContent = player.summary;
+    profileAchievements.textContent = player.achievements;
+    profilePhoto.src = player.image;
+    profilePhoto.alt = player.name + " - BBW Football Academy";
+
+    viewCvBtn.href = player.cv;
+    downloadCvBtn.href = player.cv;
+    cvViewer.src = player.cv;
+    cvNotice.textContent = "If the CV PDF has been uploaded to " + player.cv + ", it will appear above and can be viewed or downloaded. If it has not been uploaded yet, add the PDF to that exact folder/path.";
+
+    // Build 50 action-photo slots for every player.
+    // Upload photos as players/{slug}/action-photos/01.jpg through 50.jpg.
+    profileGallery.innerHTML = Array.from({length: 50}, function(_, index){
+        const number = String(index + 1).padStart(2, "0");
+        const photoPath = `players/${player.slug}/action-photos/${number}.jpg`;
+        return `<div class="profile-photo-slot empty" data-label="PHOTO ${number}">
+            <span class="photo-number">${number}</span>
+            <img src="${photoPath}" alt="${player.name} action photo ${number}" loading="lazy"
+                 onload="this.parentElement.classList.remove('empty')"
+                 onerror="this.remove()">
+        </div>`;
+    }).join("");
+
+    profileVideos.innerHTML = player.videos.map(function(video, index){
+        const videoTitles = [
+            'Player Interview',
+            'Training Session',
+            'Full Match / Player Highlights',
+            'Additional Player Highlights'
+        ];
+        return '<div class="profile-video-card"><video controls preload="metadata"><source src="' + video + '" type="video/mp4">Your browser does not support this video.</video><h4>' + videoTitles[index] + '</h4></div>';
+    }).join("");
+
+    playerProfileModal.classList.add("open");
+    playerProfileModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+}
+
+function closePlayerProfile(){
+    playerProfileModal.classList.remove("open");
+    playerProfileModal.setAttribute("aria-hidden", "true");
+    cvViewer.src = "about:blank";
+    profileVideos.innerHTML = "";
+
+    // Return to the exact screen the user came from.
+    // From "View All Players" -> back to the 18-player directory.
+    if(returnToAllPlayers){
+        openAllPlayers();
+    } else {
+        document.body.style.overflow = "";
+    }
+
+    returnToAllPlayers = false;
+}
+
+document.querySelectorAll(".player-card").forEach(function(card){
+    card.addEventListener("click", function(){
+        openPlayerProfile(card);
+    });
+});
+
+profileClose.addEventListener("click", closePlayerProfile);
+
+playerProfileModal.addEventListener("click", function(event){
+    if(event.target === playerProfileModal){
+        closePlayerProfile();
+    }
+});
+
+// CV/PDF links are ready for every player. Add the actual PDF to the player's folder.
+// Example: players/michael-thomas/cv.pdf
+
+</script>
+</body>
+</html>
