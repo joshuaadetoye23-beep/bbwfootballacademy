@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bbwfootballacademy.pages.dev/sitemap.xml
